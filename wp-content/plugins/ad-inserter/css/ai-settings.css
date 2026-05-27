@@ -36,11 +36,11 @@ hr {
 
 .ui-widget-header {
   border: 1px solid #aaa !important;
-  background: #ccc url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x !important;
+  background: #ccc url(//wp-content/plugins/ad-inserter/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x !important;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-  background: #fff url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x !important;
+  background: #fff url(//wp-content/plugins/ad-inserter/css/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x !important;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -68,7 +68,7 @@ hr {
   padding: .4em 1em !important;
   border: 1px solid #d3d3d3;
   border-radius: 4px;
-  background: #e6e6e6 url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+  background: #e6e6e6 url(//wp-content/plugins/ad-inserter/css/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
   color: #666;
   cursor: pointer;
 }
@@ -109,16 +109,16 @@ button.ai-top-button {
 .ai-icon-gear {
   width:  16px;
   height: 16px;
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 -40px;
   background-repeat: no-repeat;
 }
 
 .ai-icon-gear.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -20px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -20px -40px;
 }
 
 .ai-icon-gear.red {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -60px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -60px -40px;
 }
 
 a.simple-link {
@@ -143,7 +143,7 @@ a.clear-link, a.clear-link:hover, a.clear-link:focus {
 
 .ai-form.ai-rounded input[type=submit], .ai-button.ui-button.ui-corner-all.ui-widget {
   border: 1px solid #d3d3d3;
-  background: #e6e6e6 url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+  background: #e6e6e6 url(//wp-content/plugins/ad-inserter/css/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
 }
 
 #ai-form div.ai-rounded, #ai-sidebar div.ai-rounded {
@@ -744,7 +744,7 @@ tr.ai-website-list.read-only .ai-website-key {
 }
 
 .ai-colorpicker-alpha {
-  background-image: url("https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/transparency-24.png");
+  background-image: url("//wp-content/plugins/ad-inserter/css/images/transparency-24.png");
 }
 
 
@@ -806,205 +806,205 @@ span.checkbox-icon {
 
 .list-button {
   margin: 0;
-  background-image: url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-icons_888888_256x240.png)
+  background-image: url(//wp-content/plugins/ad-inserter/css/images/ui-icons_888888_256x240.png)
 }
 
 img.automatic-insertion.im-disabled {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 0;
 }
 
 img.automatic-insertion.im-before-post {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px 0;
 }
 
 img.automatic-insertion.im-after-post {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px 0;
 }
 
 img.automatic-insertion.im-before-content {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px 0;
 }
 
 img.automatic-insertion.im-after-content {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px 0;
 }
 
 img.automatic-insertion.im-before-paragraph {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px 0;
 }
 
 img.automatic-insertion.im-after-paragraph {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px 0;
 }
 
 img.automatic-insertion.im-before-excerpts {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px 0;
 }
 
 img.automatic-insertion.im-after-excerpts {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -56px;
 }
 
 img.automatic-insertion.im-between-posts {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -56px;
 }
 
 img.automatic-insertion.im-before-comments {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -56px;
 }
 
 img.automatic-insertion.im-between-comments {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -56px;
 }
 
 img.automatic-insertion.im-after-comments {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -56px;
 }
 
 img.automatic-insertion.im-footer {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -56px;
 }
 
 img.automatic-insertion.im-custom-hook {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -56px;
 }
 
 img.automatic-insertion.im-no-wrapping {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -56px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -56px;
 }
 
 img.automatic-insertion.im-custom-css {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -112px;
 }
 
 img.automatic-insertion.im-default {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -112px;
 }
 
 img.automatic-insertion.im-align-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -112px;
 }
 
 img.automatic-insertion.im-center {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -112px;
 }
 
 img.automatic-insertion.im-align-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -112px;
 }
 
 img.automatic-insertion.im-float-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -112px;
 }
 
 img.automatic-insertion.im-float-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -112px;
 }
 
 img.automatic-insertion.im-sticky-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -112px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -112px;
 }
 
 img.automatic-insertion.im-sticky-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -168px;
 }
 
 img.automatic-insertion.im-sticky-top {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -168px;
 }
 
 img.automatic-insertion.im-sticky-bottom {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -168px;
 }
 
 img.automatic-insertion.im-above-header {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -168px;
 }
 
 img.automatic-insertion.im-before-html {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -168px;
 }
 
 img.automatic-insertion.im-after-html {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -168px;
 }
 
 img.automatic-insertion.im-sticky-content-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -168px;
 }
 
 img.automatic-insertion.im-sticky-content-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -168px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -168px;
 }
 
 img.automatic-insertion.im-sticky-center-horizontal {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -224px;
 }
 
 img.automatic-insertion.im-sticky-center-vertical {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px -224px;
 }
 
 img.automatic-insertion.im-sticky-scroll {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -224px;
 }
 
 img.automatic-insertion.im-sticky {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -224px;
 }
 
 img.automatic-insertion.im-close-top-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -224px;
 }
 
 img.automatic-insertion.im-close-top-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -224px;
 }
 
 img.automatic-insertion.im-close-bottom-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -224px;
 }
 
 img.automatic-insertion.im-close-bottom-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -224px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -224px;
 }
 
 img.automatic-insertion.im-close-none {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -0px   -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -0px   -280px;
 }
 
 img.automatic-insertion.im-inside-html {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px  -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -56px  -280px;
 }
 
 img.automatic-insertion.im-before-image {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -112px -280px;
 }
 
 img.automatic-insertion.im-after-image {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -168px -280px;
 }
 
 
 
 .ai-background img.automatic-insertion.im-sticky-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -224px -280px;
 }
 
 .ai-background img.automatic-insertion.im-sticky-content-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -336px -280px;
 }
 
 .ai-background img.automatic-insertion.im-sticky-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -280px -280px;
 }
 
 .ai-background img.automatic-insertion.im-sticky-content-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -280px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -392px -280px;
 }
 
 .ai-background img.automatic-insertion.im-sticky-center-horizontal {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -336px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -336px;
 }
 
 
@@ -1014,128 +1014,128 @@ img.automatic-insertion {
 
 
 img.automatic-insertion.preview.im-no-wrapping {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -50px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -50px;
 }
 
 img.automatic-insertion.preview.im-custom-css {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -100px;
 }
 
 img.automatic-insertion.preview.im-default {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -50px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -50px -100px;
 }
 
 img.automatic-insertion.preview.im-align-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px -100px;
 }
 
 img.automatic-insertion.preview.im-center {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -150px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -150px -100px;
 }
 
 img.automatic-insertion.preview.im-align-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -200px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -200px -100px;
 }
 
 img.automatic-insertion.preview.im-float-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -250px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -250px -100px;
 }
 
 img.automatic-insertion.preview.im-float-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -100px;
 }
 
 img.automatic-insertion.preview.im-sticky-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -100px;
 }
 
 img.automatic-insertion.preview.im-sticky-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -150px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -150px;
 }
 
 img.automatic-insertion.preview.im-sticky-top {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -50px -150px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -50px -150px;
 }
 
 img.automatic-insertion.preview.im-sticky-bottom {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px -150px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px -150px;
 }
 
 img.automatic-insertion.preview.im-sticky-content-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -150px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -150px;
 }
 
 img.automatic-insertion.preview.im-sticky-content-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -150px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -150px;
 }
 
 img.automatic-insertion.preview.im-sticky-content-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -150px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -150px;
 }
 
 img.automatic-insertion.preview.im-sticky-center-horizontal {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -200px;
 }
 
 img.automatic-insertion.preview.im-sticky-center-vertical {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -50px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -50px -200px;
 }
 
 img.automatic-insertion.preview.im-sticky-scroll {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px -200px;
 }
 
 img.automatic-insertion.preview.im-sticky {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -150px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -150px -200px;
 }
 
 img.automatic-insertion.preview.im-close-top-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -200px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -200px -200px;
 }
 
 img.automatic-insertion.preview.im-close-top-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -250px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -250px -200px;
 }
 
 img.automatic-insertion.preview.im-close-bottom-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -200px;
 }
 
 img.automatic-insertion.preview.im-close-bottom-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -200px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -200px;
 }
 
 img.automatic-insertion.preview.im-close-none {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -0px   -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -0px   -250px;
 }
 
 img.automatic-insertion.preview.im-before-image {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px   -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -100px   -250px;
 }
 
 img.automatic-insertion.preview.im-after-image {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -150px  -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -150px  -250px;
 }
 
 
 .ai-background img.automatic-insertion.preview.im-sticky-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -200px -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -200px -250px;
 }
 
 .ai-background img.automatic-insertion.preview.im-sticky-content-left {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -300px -250px;
 }
 
 .ai-background img.automatic-insertion.preview.im-sticky-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -250px -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -250px -250px;
 }
 
 .ai-background img.automatic-insertion.preview.im-sticky-content-right {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -250px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') -350px -250px;
 }
 
 .ai-background img.automatic-insertion.preview.im-sticky-center-horizontal {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -300px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/insertions-alignmets.png') 0 -300px;
 }
 
 
@@ -1145,159 +1145,159 @@ img.automatic-insertion.preview {
 
 
 .checkbox-icon.icon-tracking {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -40px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -40px -20px;
 }
 
 .checkbox-icon.icon-tracking.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -40px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -40px 0;
 }
 
 .tracking-disabled .checkbox-icon.icon-tracking.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -40px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -40px -40px;
 }
 
 .checkbox-icon.icon-tablet {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -20px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -20px -20px;
 }
 
 .checkbox-icon.icon-tablet.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -20px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -20px 0;
 }
 
 .checkbox-icon.icon-php {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 -20px;
 }
 
 .checkbox-icon.icon-php.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 0;
 }
 
 .checkbox-icon.icon-enabled {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -100px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -100px -20px;
 }
 
 .checkbox-icon.icon-enabled.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -100px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -100px 0;
 }
 
 .checkbox-icon.icon-export-import {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -80px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -80px -20px;
 }
 
 .checkbox-icon.icon-export-import.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -80px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -80px 0;
 }
 
 .checkbox-icon.icon-statistics {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -60px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -60px -20px;
 }
 
 .checkbox-icon.icon-statistics.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -60px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -60px 0;
 }
 
 .checkbox-icon.icon-adb {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -120px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -120px -20px;
 }
 
 .checkbox-icon.icon-adb.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -120px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -120px 0;
 }
 
 .checkbox-icon.icon-code {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 -80px;
 }
 
 .checkbox-icon.icon-code.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 -60px;
 }
 
 .checkbox-icon.icon-rotation {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -20px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -20px -80px;
 }
 
 .checkbox-icon.icon-rotation.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -20px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -20px -60px;
 }
 
 .checkbox-icon.icon-rotation.active {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -100px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -100px -40px;
 }
 
 .checkbox-icon.icon-generate {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -40px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -40px -80px;
 }
 
 .checkbox-icon.icon-generate.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -40px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -40px -60px;
 }
 
 .checkbox-icon.icon-import {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -60px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -60px -80px;
 }
 
 .checkbox-icon.icon-import.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -60px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -60px -60px;
 }
 
 .checkbox-icon.icon-edit {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -80px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -80px -40px;
 }
 
 .checkbox-icon.icon-minus {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -80px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -80px -80px;
 }
 
 .checkbox-icon.icon-plus {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -80px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -80px -60px;
 }
 
 .checkbox-icon.icon-tools {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -100px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -100px -80px;
 }
 
 .checkbox-icon.icon-tools.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -100px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -100px -60px;
 }
 
 .checkbox-icon.icon-copy {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -120px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -120px -80px;
 }
 
 .checkbox-icon.icon-copy.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -120px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -120px -60px;
 }
 
 .checkbox-icon.icon-paste {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -120px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -120px -40px;
 }
 
 .checkbox-icon.icon-paste-name {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -180px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -180px -40px;
 }
 
 .checkbox-icon.icon-paste-code {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -160px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -160px -40px;
 }
 
 .checkbox-icon.icon-paste-settings {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -140px -40px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -140px -40px;
 }
 
 .checkbox-icon.icon-clear {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -160px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -160px -80px;
 }
 
 .checkbox-icon.icon-pause {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -180px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -180px -80px;
 }
 
 .checkbox-icon.icon-pause.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -180px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -180px -60px;
 }
 
 .checkbox-icon.icon-ads-txt {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -160px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -160px -60px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -1308,48 +1308,48 @@ img.automatic-insertion.preview {
 
 
 .checkbox-icon.icon-enabled-all {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -142px -22px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -142px -22px;
 }
 
 .checkbox-icon.icon-enabled-all.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -142px -2px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -142px -2px;
 }
 
 
 .checkbox-icon.icon-rearrange {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -140px -80px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -140px -80px;
 }
 
 .checkbox-icon.icon-rearrange.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -140px -60px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -140px -60px;
 }
 
 .checkbox-icon.icon-loading {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -163px -23px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -163px -23px;
 }
 
 .checkbox-icon.icon-loading.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -163px -3px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -163px -3px;
 }
 
 .checkbox-icon.icon-reload {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -161px -22px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -161px -22px;
 }
 
 .checkbox-icon.icon-reload.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -161px -2px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -161px -2px;
 }
 
 .checkbox-icon.icon-auto-refresh {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -180px -20px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -180px -20px;
 }
 
 .checkbox-icon.icon-auto-refresh.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -180px 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -180px 0;
 }
 
 .checkbox-icon.icon-css {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.5;
@@ -1362,7 +1362,7 @@ img.automatic-insertion.preview {
 }
 
 .checkbox-icon.icon-js {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -20px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -20px -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.5;
@@ -1375,7 +1375,7 @@ img.automatic-insertion.preview {
 }
 
 .checkbox-icon.icon-php-red {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -40px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -40px -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.5;
@@ -1388,7 +1388,7 @@ img.automatic-insertion.preview {
 }
 
 .checkbox-icon.icon-h {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -60px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -60px -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.5;
@@ -1401,7 +1401,7 @@ img.automatic-insertion.preview {
 }
 
 .checkbox-icon.icon-f {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -80px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -80px -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.5;
@@ -1414,7 +1414,7 @@ img.automatic-insertion.preview {
 }
 
 .checkbox-icon.icon-html {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -100px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -100px -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.5;
@@ -1427,7 +1427,7 @@ img.automatic-insertion.preview {
 }
 
 .checkbox-icon.icon-adsense {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') -120px -100px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') -120px -100px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -1469,32 +1469,32 @@ img.automatic-insertion.preview {
 
 
 .checkbox-icon.size-img16.icon-adsense {
-   background: url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png) -96px -80px;
+   background: url(//wp-content/plugins/ad-inserter/css/images/icons.png) -96px -80px;
    background-size: 160px 112px;
 }
 
 .checkbox-icon.size-img16.icon-tracking {
-   background: url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png) -32px -16px;
+   background: url(//wp-content/plugins/ad-inserter/css/images/icons.png) -32px -16px;
    background-size: 160px 112px;
 }
 
 .checkbox-icon.size-img16.icon-tracking.on {
-   background: url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png) -32px 0;
+   background: url(//wp-content/plugins/ad-inserter/css/images/icons.png) -32px 0;
    background-size: 160px 112px;
 }
 
 .tracking-disabled .checkbox-icon.size-img16.icon-tracking.on {
-   background: url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png) -32px -32px;
+   background: url(//wp-content/plugins/ad-inserter/css/images/icons.png) -32px -32px;
    background-size: 160px 112px;
 }
 
 .checkbox-icon.size-img16.icon-php {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 -16px;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 -16px;
   background-size: 160px 112px;
 }
 
 .checkbox-icon.size-img16.icon-php.on {
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/icons.png') 0 0;
+  background: url('//wp-content/plugins/ad-inserter/css/images/icons.png') 0 0;
   background-size: 160px 112px;
 }
 
@@ -1856,7 +1856,7 @@ input[type=text], input[type=time], input[type=url], input[type=week], .ui-widge
   font-size: 11px;
   color: #FFF!important;
   border: 1px solid #c6c6c6;
-  background: #ddd url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x;
+  background: #ddd url(//wp-content/plugins/ad-inserter/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x;
   border-radius: 5px;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
