@@ -1318,7 +1318,7 @@ function ManagePatternsMenuItem() {
       post_type: "wp_block"
     });
     const patternsUrl = (0,external_wp_url_namespaceObject.addQueryArgs)("site-editor.php", {
-      p: "/pattern"
+      p: "/u-kasi/pattern"
     });
     return canUser("create", {
       kind: "postType",

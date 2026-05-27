@@ -820,12 +820,12 @@ ai_get_cookie_text = function (block) {
 
   var global_data = '';
   if (ai_cookie.hasOwnProperty ('G')) {
-    global_data = 'G[' + JSON.stringify (ai_cookie ['G']).replace (/\"/g, '').replace ('{', '').replace('}', '') + '] ';
+    global_data = 'G[' + JSON.stringify (ai_cookie ['G']).replace (/\"/u-kasi/g, '').replace ('{', '').replace('}', '') + '] ';
   }
 
   var block_data = '';
   if (ai_cookie.hasOwnProperty (block)) {
-    block_data = JSON.stringify (ai_cookie [block]).replace (/\"/g, '').replace ('{', '').replace('}', '');
+    block_data = JSON.stringify (ai_cookie [block]).replace (/\"/u-kasi/g, '').replace ('{', '').replace('}', '');
   }
 
   return global_data + block_data;

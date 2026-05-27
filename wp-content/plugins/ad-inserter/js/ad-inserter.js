@@ -4941,7 +4941,7 @@ jQuery(document).ready (function($) {
         list_item = list_item.replace ('http://', '');
         list_item = list_item.replace ('https://', '');
 
-        var slash = list_item.indexOf ("/");
+        var slash = list_item.indexOf ("/u-kasi/");
 
         if (clean_domain) {
           if (slash > 0) {

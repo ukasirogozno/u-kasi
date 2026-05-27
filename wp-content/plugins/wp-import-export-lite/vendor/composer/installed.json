@@ -39,7 +39,7 @@
                     "HTMLPurifier": "library/"
                 },
                 "exclude-from-classmap": [
-                    "/library/HTMLPurifier/Language/"
+                    "/u-kasi/library/HTMLPurifier/Language/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",

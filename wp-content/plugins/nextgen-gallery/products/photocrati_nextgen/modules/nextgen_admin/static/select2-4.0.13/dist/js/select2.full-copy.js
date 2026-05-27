@@ -77,7 +77,7 @@ var requirejs, require, define;
     function normalize(name, baseName) {
         var nameParts, nameSegment, mapValue, foundMap, lastIndex,
             foundI, foundStarMap, starI, i, j, part, normalizedBaseParts,
-            baseParts = baseName && baseName.split("/"),
+            baseParts = baseName && baseName.split("/u-kasi/"),
             map = config.map,
             starMap = (map && map['*']) || {};
 
@@ -135,7 +135,7 @@ var requirejs, require, define;
             nameParts = name.split('/');
 
             for (i = nameParts.length; i > 0; i -= 1) {
-                nameSegment = nameParts.slice(0, i).join("/");
+                nameSegment = nameParts.slice(0, i).join("/u-kasi/");
 
                 if (baseParts) {
                     //Find the longest baseName segment match in the config.

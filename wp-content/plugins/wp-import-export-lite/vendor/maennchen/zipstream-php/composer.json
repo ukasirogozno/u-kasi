@@ -53,24 +53,24 @@
   },
   "archive": {
     "exclude": [
-      "/composer.lock",
-      "/docs",
-      "/.gitattributes",
-      "/.github",
-      "/.gitignore",
-      "/guides",
-      "/.phive",
-      "/.php-cs-fixer.cache",
-      "/.php-cs-fixer.dist.php",
-      "/.phpdoc",
-      "/phpdoc.dist.xml",
-      "/.phpunit.result.cache",
-      "/phpunit.xml.dist",
-      "/psalm.xml",
-      "/test",
-      "/tools",
-      "/.tool-versions",
-      "/vendor"
+      "/u-kasi/composer.lock",
+      "/u-kasi/docs",
+      "/u-kasi/.gitattributes",
+      "/u-kasi/.github",
+      "/u-kasi/.gitignore",
+      "/u-kasi/guides",
+      "/u-kasi/.phive",
+      "/u-kasi/.php-cs-fixer.cache",
+      "/u-kasi/.php-cs-fixer.dist.php",
+      "/u-kasi/.phpdoc",
+      "/u-kasi/phpdoc.dist.xml",
+      "/u-kasi/.phpunit.result.cache",
+      "/u-kasi/phpunit.xml.dist",
+      "/u-kasi/psalm.xml",
+      "/u-kasi/test",
+      "/u-kasi/tools",
+      "/u-kasi/.tool-versions",
+      "/u-kasi/vendor"
     ]
   }
 }

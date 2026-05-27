@@ -421,13 +421,13 @@ const getNavigationCommandLoaderPerTemplate = (templateType) => function useNavi
         callback: ({ close }) => {
           if (isSiteEditor) {
             history.navigate(
-              "/pattern?postType=wp_template_part&categoryId=all-parts"
+              "/u-kasi/pattern?postType=wp_template_part&categoryId=all-parts"
             );
           } else {
             document.location = (0,external_wp_url_namespaceObject.addQueryArgs)(
               "site-editor.php",
               {
-                p: "/pattern",
+                p: "/u-kasi/pattern",
                 postType: "wp_template_part",
                 categoryId: "all-parts"
               }
@@ -471,12 +471,12 @@ const getSiteEditorBasicNavigationCommands = () => function useSiteEditorBasicNa
         icon: styles_default,
         callback: ({ close }) => {
           if (isSiteEditor) {
-            history.navigate("/styles");
+            history.navigate("/u-kasi/styles");
           } else {
             document.location = (0,external_wp_url_namespaceObject.addQueryArgs)(
               "site-editor.php",
               {
-                p: "/styles"
+                p: "/u-kasi/styles"
               }
             );
           }
@@ -489,12 +489,12 @@ const getSiteEditorBasicNavigationCommands = () => function useSiteEditorBasicNa
         icon: navigation_default,
         callback: ({ close }) => {
           if (isSiteEditor) {
-            history.navigate("/navigation");
+            history.navigate("/u-kasi/navigation");
           } else {
             document.location = (0,external_wp_url_namespaceObject.addQueryArgs)(
               "site-editor.php",
               {
-                p: "/navigation"
+                p: "/u-kasi/navigation"
               }
             );
           }
@@ -507,12 +507,12 @@ const getSiteEditorBasicNavigationCommands = () => function useSiteEditorBasicNa
         icon: layout_default,
         callback: ({ close }) => {
           if (isSiteEditor) {
-            history.navigate("/template");
+            history.navigate("/u-kasi/template");
           } else {
             document.location = (0,external_wp_url_namespaceObject.addQueryArgs)(
               "site-editor.php",
               {
-                p: "/template"
+                p: "/u-kasi/template"
               }
             );
           }
@@ -528,12 +528,12 @@ const getSiteEditorBasicNavigationCommands = () => function useSiteEditorBasicNa
         callback: ({ close }) => {
           if (canCreateTemplate) {
             if (isSiteEditor) {
-              history.navigate("/pattern");
+              history.navigate("/u-kasi/pattern");
             } else {
               document.location = (0,external_wp_url_namespaceObject.addQueryArgs)(
                 "site-editor.php",
                 {
-                  p: "/pattern"
+                  p: "/u-kasi/pattern"
                 }
               );
             }
@@ -582,13 +582,13 @@ const getGlobalStylesOpenCssCommands = () => function useGlobalStylesOpenCssComm
         callback: ({ close }) => {
           close();
           if (isSiteEditor) {
-            history.navigate("/styles?section=/css");
+            history.navigate("/u-kasi/styles?section=/css");
           } else {
             document.location = (0,external_wp_url_namespaceObject.addQueryArgs)(
               "site-editor.php",
               {
-                p: "/styles",
-                section: "/css"
+                p: "/u-kasi/styles",
+                section: "/u-kasi/css"
               }
             );
           }

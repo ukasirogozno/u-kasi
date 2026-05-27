@@ -464,7 +464,7 @@ var ai_adb_detected_actions = function (n) {
       ai_ready (ai_ready_ProcessElements);
 
       if (ai_adb_debugging) console.log ("AI AD BLOCKING action check");
-//        AiCookies.remove (ai_adb_pgv_cookie_name, {path: "/"});
+//        AiCookies.remove (ai_adb_pgv_cookie_name, {path: "/u-kasi/"});
 
       // Disable action for bots
       if (typeof MobileDetect !== "undefined") {
@@ -499,13 +499,13 @@ var ai_adb_detected_actions = function (n) {
         if (ai_adb_debugging) console.log ("AI AD BLOCKING page views cookie:", cookie, "- page view:", ai_adb_page_view_counter);
         if (ai_adb_page_view_counter <= ai_adb_page_view_delay) {
           if (ai_adb_debugging) console.log ("AI AD BLOCKING", ai_adb_page_view_delay, "page views not reached, no action");
-          AiCookies.set (ai_adb_pgv_cookie_name, ai_adb_page_view_counter, {expires: 365, path: "/"});
+          AiCookies.set (ai_adb_pgv_cookie_name, ai_adb_page_view_counter, {expires: 365, path: "/u-kasi/"});
           window.ai_d1 = ai_adb_page_view_counter;
           ai_adb_message_code_1 ();
           return;
         }
         if (ai_adb_page_view_repeat != 0) {
-          AiCookies.set (ai_adb_pgv_cookie_name, ai_adb_page_view_counter, {expires: 365, path: "/"});
+          AiCookies.set (ai_adb_pgv_cookie_name, ai_adb_page_view_counter, {expires: 365, path: "/u-kasi/"});
           if ((ai_adb_page_view_counter - ai_adb_page_view_delay - 1) % ai_adb_page_view_repeat != 0) {
             if (ai_adb_debugging) console.log ("AI AD BLOCKING every", ai_adb_page_view_repeat, "page views, no action");
             window.ai_d1 = ai_adb_page_view_counter;
@@ -526,9 +526,9 @@ var ai_adb_detected_actions = function (n) {
         }
 
         else if (ai_adb_debugging) console.log ("AI AD BLOCKING invalid cookie");
-        AiCookies.set (ai_adb_act_cookie_name, ai_adb_cookie_value, {expires: ai_adb_message_cookie_lifetime, path: "/"});
+        AiCookies.set (ai_adb_act_cookie_name, ai_adb_cookie_value, {expires: ai_adb_message_cookie_lifetime, path: "/u-kasi/"});
       } else
-          AiCookies.remove (ai_adb_act_cookie_name, {path: "/"});
+          AiCookies.remove (ai_adb_act_cookie_name, {path: "/u-kasi/"});
 
       if (ai_adb_debugging) console.log ("AI AD BLOCKING action", ai_adb_action);
 
@@ -594,7 +594,7 @@ var ai_adb_detected_actions = function (n) {
               if (typeof cookie == "undefined") {
                 var date = new Date();
                 date.setTime (date.getTime() + (10 * 1000));
-                AiCookies.set (ai_adb_page_redirection_cookie_name, window.location.href, {expires: date, path: "/"});
+                AiCookies.set (ai_adb_page_redirection_cookie_name, window.location.href, {expires: date, path: "/u-kasi/"});
 
                 if (ai_adb_redirection_url.substr (ai_adb_redirection_url.length - 1) == "?") {
                   ai_adb_redirection_url = ai_adb_redirection_url.slice (0, - 1);
@@ -610,7 +610,7 @@ var ai_adb_detected_actions = function (n) {
                 }
             } else {
                 if (ai_adb_debugging) console.log ("AI AD BLOCKING already on page", window.location.href);
-                AiCookies.remove (ai_adb_page_redirection_cookie_name, {path: "/"});
+                AiCookies.remove (ai_adb_page_redirection_cookie_name, {path: "/u-kasi/"});
               }
           }
           break;
@@ -664,8 +664,8 @@ function ai_adb_checks () {
     setTimeout (function () {
       if (document.querySelector ('#ai-adb-bar') != null)
         document.querySelector ('#ai-adb-bar').addEventListener ('click', (event) => {
-          AiCookies.remove (ai_adb_act_cookie_name, {path: "/"});
-          AiCookies.remove (ai_adb_pgv_cookie_name, {path: "/"});
+          AiCookies.remove (ai_adb_act_cookie_name, {path: "/u-kasi/"});
+          AiCookies.remove (ai_adb_pgv_cookie_name, {path: "/u-kasi/"});
           ai_adb_message_code_5 ();
           ai_dummy = 15; // Do not remove - to prevent optimization
         });

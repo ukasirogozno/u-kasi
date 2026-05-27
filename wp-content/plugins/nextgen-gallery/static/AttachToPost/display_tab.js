@@ -833,7 +833,7 @@ jQuery(function($){
 
         render: function() {
             // Create all elements
-            var image_container = $('<label style="display: block; cursor: pointer;"/>').addClass('image_container');
+            var image_container = $('<label style="display: block; cursor: pointer;"/u-kasi/>').addClass('image_container');
 
             var img = $('<img/>').attr({
                 src: this.model.get('preview_image_url'),
@@ -870,7 +870,7 @@ jQuery(function($){
             this.displayed_gallery	= Ngg.DisplayTab.instance.displayed_gallery;
 
             // Create the entity list
-            this.entity_list		= $('<ul/>').attr('id', 'entity_list').append('<li class="clear"/>');
+            this.entity_list		= $('<ul/>').attr('id', 'entity_list').append('<li class="clear"/u-kasi/>');
 
             // When an entity is added/removed to the collection, we'll add/remove it on the DOM
             this.entities.on('add', this.render_entity, this);
@@ -903,7 +903,7 @@ jQuery(function($){
 
         entities_reset: function(e){
             this.entities.reset(null, {silent: true});
-            this.entity_list.empty().append('<li class="clear"/>');
+            this.entity_list.empty().append('<li class="clear"/u-kasi/>');
             if (!this.entities.in_progress) this.entities.fetch();
         },
 

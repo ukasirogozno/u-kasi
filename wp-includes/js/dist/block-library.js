@@ -4337,7 +4337,7 @@ var breadcrumbs_default = /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceO
 
 
 ;// ./node_modules/@wordpress/block-library/build-module/breadcrumbs/block.json
-const breadcrumbs_block_namespaceObject = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"core/breadcrumbs","title":"Breadcrumbs","__experimental":true,"category":"theme","description":"Display a breadcrumb trail for hierarchical post types or based on taxonomy terms.","textdomain":"default","attributes":{"type":{"type":"string","default":"auto","enum":["auto","postWithTerms","postWithAncestors"]},"separator":{"type":"string","default":"/"},"showHomeLink":{"type":"boolean","default":true}},"usesContext":["postId","postType","templateSlug"],"supports":{"html":false,"spacing":{"margin":true,"padding":true},"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"__experimentalBorder":{"radius":true,"color":true,"width":true,"style":true,"__experimentalDefaultControls":{"radius":false,"color":true,"width":true,"style":true}},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalFontWeight":true,"__experimentalFontStyle":true,"__experimentalTextTransform":true,"__experimentalTextDecoration":true,"__experimentalLetterSpacing":true,"__experimentalDefaultControls":{"fontSize":true}},"interactivity":{"clientNavigation":true}},"style":"wp-block-breadcrumbs"}');
+const breadcrumbs_block_namespaceObject = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"core/breadcrumbs","title":"Breadcrumbs","__experimental":true,"category":"theme","description":"Display a breadcrumb trail for hierarchical post types or based on taxonomy terms.","textdomain":"default","attributes":{"type":{"type":"string","default":"auto","enum":["auto","postWithTerms","postWithAncestors"]},"separator":{"type":"string","default":"/u-kasi/"},"showHomeLink":{"type":"boolean","default":true}},"usesContext":["postId","postType","templateSlug"],"supports":{"html":false,"spacing":{"margin":true,"padding":true},"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"__experimentalBorder":{"radius":true,"color":true,"width":true,"style":true,"__experimentalDefaultControls":{"radius":false,"color":true,"width":true,"style":true}},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalFontWeight":true,"__experimentalFontStyle":true,"__experimentalTextTransform":true,"__experimentalTextDecoration":true,"__experimentalLetterSpacing":true,"__experimentalDefaultControls":{"fontSize":true}},"interactivity":{"clientNavigation":true}},"style":"wp-block-breadcrumbs"}');
 ;// ./node_modules/@wordpress/block-library/build-module/breadcrumbs/edit.js
 
 
@@ -4348,7 +4348,7 @@ const breadcrumbs_block_namespaceObject = /*#__PURE__*/JSON.parse('{"$schema":"h
 
 
 
-const separatorDefaultValue = "/";
+const separatorDefaultValue = "/u-kasi/";
 const typeDefaultValue = "auto";
 const BREADCRUMB_TYPES = {
   auto: {
@@ -7696,7 +7696,7 @@ const code_settings = {
       /* eslint-disable @wordpress/i18n-no-collapsible-whitespace */
       // translators: Preserve \n markers for line breaks
       content: (0,external_wp_i18n_namespaceObject.__)(
-        "// A \u201Cblock\u201D is the abstract term used\n// to describe units of markup that\n// when composed together, form the\n// content or layout of a page.\nregisterBlockType( name, settings );"
+        "/u-kasi// A \u201Cblock\u201D is the abstract term used\n// to describe units of markup that\n// when composed together, form the\n// content or layout of a page.\nregisterBlockType( name, settings );"
       )
       /* eslint-enable @wordpress/i18n-no-collapsible-whitespace */
     }
@@ -9955,7 +9955,7 @@ const useDefaultPageIndex = ({ defaultPage, postId, perPage, queryArgs }) => {
       return;
     }
     external_wp_apiFetch_default()({
-      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/wp/v2/comments", {
+      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/u-kasi/wp/v2/comments", {
         ...queryArgs,
         post: postId,
         per_page: perPage,
@@ -10641,7 +10641,7 @@ function comments_title_edit_Edit({
     }
     const currentPostId = postId;
     external_wp_apiFetch_default()({
-      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/wp/v2/comments", {
+      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/u-kasi/wp/v2/comments", {
         post: postId,
         _fields: "id"
       }),
@@ -19648,7 +19648,7 @@ function utils_getHrefAndDestination(image, galleryDestination, imageDestination
 ;// ./node_modules/@wordpress/block-library/build-module/image/utils.js
 
 function evalAspectRatio(value) {
-  const [width, height = 1] = value.split("/").map(Number);
+  const [width, height = 1] = value.split("/u-kasi/").map(Number);
   const aspectRatio = width / height;
   return aspectRatio === Infinity || aspectRatio === 0 ? NaN : aspectRatio;
 }
@@ -31215,7 +31215,7 @@ var use_convert_classic_menu_to_block_menu_default = useConvertClassicToBlockMen
 
 ;// ./node_modules/@wordpress/block-library/build-module/template-part/edit/utils/create-template-part-id.js
 function createTemplatePartId(theme, slug) {
-  return theme && slug ? theme + "//" + slug : null;
+  return theme && slug ? theme + "/u-kasi//" + slug : null;
 }
 
 
@@ -37711,7 +37711,7 @@ function PostCommentsCountEdit({
     }
     const currentPostId = postId;
     external_wp_apiFetch_default()({
-      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/wp/v2/comments", {
+      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/u-kasi/wp/v2/comments", {
         post: postId
       }),
       parse: false
@@ -37863,7 +37863,7 @@ function PostCommentsLinkEdit({ context, attributes, setAttributes }) {
     }
     const currentPostId = postId;
     external_wp_apiFetch_default()({
-      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/wp/v2/comments", {
+      path: (0,external_wp_url_namespaceObject.addQueryArgs)("/u-kasi/wp/v2/comments", {
         post: postId
       }),
       parse: false
@@ -42189,7 +42189,7 @@ function OrderControl({
       value: `${orderBy}/${order}`,
       options: orderByOptions,
       onChange: (value) => {
-        const [newOrderBy, newOrder] = value.split("/");
+        const [newOrderBy, newOrder] = value.split("/u-kasi/");
         onChange({ order: newOrder, orderBy: newOrderBy });
       }
     }
@@ -47690,7 +47690,7 @@ const SiteLogo = ({
     );
   }
   const shouldUseNewUrl = !window?.__experimentalUseCustomizerSiteLogoUrl;
-  const siteIconSettingsUrl = shouldUseNewUrl ? siteUrl + "/wp-admin/options-general.php" : siteUrl + "/wp-admin/customize.php?autofocus[section]=title_tagline";
+  const siteIconSettingsUrl = shouldUseNewUrl ? siteUrl + "/u-kasi/wp-admin/options-general.php" : siteUrl + "/u-kasi/wp-admin/customize.php?autofocus[section]=title_tagline";
   const syncSiteIconHelpText = (0,external_wp_element_namespaceObject.createInterpolateElement)(
     (0,external_wp_i18n_namespaceObject.__)(
       "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. To use a custom icon that is different from your site logo, use the <a>Site Icon settings</a>."
@@ -54376,7 +54376,7 @@ const template_part_settings = {
     const entity = getEditedEntityRecord(
       "postType",
       "wp_template_part",
-      (theme || getCurrentTheme()?.stylesheet) + "//" + slug
+      (theme || getCurrentTheme()?.stylesheet) + "/u-kasi//" + slug
     );
     if (!entity) {
       return;
@@ -54957,9 +54957,9 @@ function order_control_OrderControl({ orderBy, order, onChange, ...props }) {
           value: "count/asc"
         }
       ],
-      value: orderBy + "/" + order,
+      value: orderBy + "/u-kasi/" + order,
       onChange: (value) => {
-        const [newOrderBy, newOrder] = value.split("/");
+        const [newOrderBy, newOrder] = value.split("/u-kasi/");
         onChange(newOrderBy, newOrder);
       },
       ...props

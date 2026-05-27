@@ -2093,7 +2093,7 @@ var Color = function (_tinycolor) {
     }
 
     /**
-     * @param {string|null} [format] One of "rgb", "prgb", "hex"/"hex6", "hex3", "hex8", "hsl", "hsv"/"hsb", "name"
+     * @param {string|null} [format] One of "rgb", "prgb", "hex"/u-kasi/"hex6", "hex3", "hex8", "hsl", "hsv"/u-kasi/"hsb", "name"
      * @returns {String}
      */
 

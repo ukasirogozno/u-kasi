@@ -114,7 +114,7 @@ function create({
       return cache;
     }
     const user = await external_wp_apiFetch_default()({
-      path: "/wp/v2/users/me?context=edit"
+      path: "/u-kasi/wp/v2/users/me?context=edit"
     });
     const serverData = user?.meta?.persisted_preferences;
     const localData = JSON.parse(
@@ -142,7 +142,7 @@ function create({
       JSON.stringify(dataWithTimestamp)
     );
     debouncedApiFetch({
-      path: "/wp/v2/users/me",
+      path: "/u-kasi/wp/v2/users/me",
       method: "PUT",
       // `keepalive` will still send the request in the background,
       // even when a browser unload event might interrupt it.

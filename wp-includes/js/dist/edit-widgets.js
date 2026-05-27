@@ -574,7 +574,7 @@ function ComplementaryAreaToggle({
     ComponentToUse,
     {
       icon: selectedIcon && isSelected ? selectedIcon : icon,
-      "aria-controls": identifier.replace("/", ":"),
+      "aria-controls": identifier.replace("/u-kasi/", ":"),
       "aria-checked": roleSupportsCheckedState(props.role) ? isSelected : void 0,
       onClick: () => {
         if (isSelected) {
@@ -977,7 +977,7 @@ function ComplementaryArea({
         isActive,
         className: dist_clsx("interface-complementary-area", className),
         scope,
-        id: identifier.replace("/", ":"),
+        id: identifier.replace("/u-kasi/", ":"),
         children: [
           /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
             complementary_area_header_default,
@@ -1888,7 +1888,7 @@ const storeConfig = {
 const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(constants_STORE_NAME, storeConfig);
 (0,external_wp_data_namespaceObject.register)(store_store);
 external_wp_apiFetch_default().use(function(options, next) {
-  if (options.path?.indexOf("/wp/v2/types/widget-area") === 0) {
+  if (options.path?.indexOf("/u-kasi/wp/v2/types/widget-area") === 0) {
     return Promise.resolve({});
   }
   return next(options);
@@ -3244,7 +3244,7 @@ function KeyboardShortcutHelpModal({
             categoryName: "block",
             additionalShortcuts: [
               {
-                keyCombination: { character: "/" },
+                keyCombination: { character: "/u-kasi/" },
                 description: (0,external_wp_i18n_namespaceObject.__)(
                   "Change the block type after adding a new paragraph."
                 ),

@@ -401,7 +401,7 @@ function ReusableBlocksManageButton({ clientId }) {
           kind: "postType",
           name: "wp_template"
         }) ? (0,external_wp_url_namespaceObject.addQueryArgs)("site-editor.php", {
-          p: "/pattern"
+          p: "/u-kasi/pattern"
         }) : (0,external_wp_url_namespaceObject.addQueryArgs)("edit.php", {
           post_type: "wp_block"
         })

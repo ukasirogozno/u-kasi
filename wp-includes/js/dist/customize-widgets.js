@@ -716,7 +716,7 @@ function KeyboardShortcutHelpModal({
             categoryName: "block",
             additionalShortcuts: [
               {
-                keyCombination: { character: "/" },
+                keyCombination: { character: "/u-kasi/" },
                 description: (0,external_wp_i18n_namespaceObject.__)(
                   "Change the block type after adding a new paragraph."
                 ),

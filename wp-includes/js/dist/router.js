@@ -141,15 +141,15 @@ var map = function (callback, addRouteCallback) {
 
 // Normalizes percent-encoded values in `path` to upper-case and decodes percent-encoded
 // values that are not reserved (i.e., unicode characters, emoji, etc). The reserved
-// chars are "/" and "%".
+// chars are "/u-kasi/" and "%".
 // Safe to call multiple times on the same path.
 // Normalizes percent-encoded values in `path` to upper-case and decodes percent-encoded
 function normalizePath(path) {
-    return path.split("/")
+    return path.split("/u-kasi/")
         .map(normalizeSegment)
-        .join("/");
+        .join("/u-kasi/");
 }
-// We want to ensure the characters "%" and "/" remain in percent-encoded
+// We want to ensure the characters "%" and "/u-kasi/" remain in percent-encoded
 // form when normalizing paths, so replace them with their encoded form after
 // decoding the rest of the path
 var SEGMENT_RESERVED_CHARS = /%|\//g;
@@ -247,12 +247,12 @@ var EmptyArray = Object.freeze([]);
 // segment. `shouldDecodes` will be populated with a boolean for each dyanamic/star
 // segment, indicating whether it should be decoded during recognition.
 function parse(segments, route, types) {
-    // normalize route as not starting with a "/". Recognition will
+    // normalize route as not starting with a "/u-kasi/". Recognition will
     // also normalize.
     if (route.length > 0 && route.charCodeAt(0) === 47 /* SLASH */) {
         route = route.substr(1);
     }
-    var parts = route.split("/");
+    var parts = route.split("/u-kasi/");
     var names = undefined;
     var shouldDecodes = undefined;
     for (var i = 0; i < parts.length; i++) {
@@ -535,9 +535,9 @@ RouteRecognizer.prototype.add = function add (routes, options) {
                 continue;
             }
             isEmpty = false;
-            // Add a "/" for the new segment
+            // Add a "/u-kasi/" for the new segment
             currentState = currentState.put(47 /* SLASH */, false, false);
-            pattern += "/";
+            pattern += "/u-kasi/";
             // Add a representation of the segment to the NFA and regex
             currentState = eachChar[segment.type](segment, currentState);
             pattern += regex[segment.type](segment);
@@ -550,7 +550,7 @@ RouteRecognizer.prototype.add = function add (routes, options) {
     }
     if (isEmpty) {
         currentState = currentState.put(47 /* SLASH */, false, false);
-        pattern += "/";
+        pattern += "/u-kasi/";
     }
     currentState.handlers = handlers;
     currentState.pattern = pattern + "$";
@@ -596,11 +596,11 @@ RouteRecognizer.prototype.generate = function generate$1 (name, params) {
         if (segment.type === 4 /* Epsilon */) {
             continue;
         }
-        output += "/";
+        output += "/u-kasi/";
         output += generate[segment.type](segment, params);
     }
-    if (output.charAt(0) !== "/") {
-        output = "/" + output;
+    if (output.charAt(0) !== "/u-kasi/") {
+        output = "/u-kasi/" + output;
     }
     if (params && params.queryParams) {
         output += this.generateQueryString(params.queryParams);
@@ -677,8 +677,8 @@ RouteRecognizer.prototype.recognize = function recognize (path) {
         path = path.substr(0, queryStart);
         queryParams = this.parseQueryString(queryString);
     }
-    if (path.charAt(0) !== "/") {
-        path = "/" + path;
+    if (path.charAt(0) !== "/u-kasi/") {
+        path = "/u-kasi/" + path;
     }
     var originalPath = path;
     if (RouteRecognizer.ENCODE_AND_DECODE_PATH_SEGMENTS) {
@@ -689,7 +689,7 @@ RouteRecognizer.prototype.recognize = function recognize (path) {
         originalPath = decodeURI(originalPath);
     }
     var pathLen = path.length;
-    if (pathLen > 1 && path.charAt(pathLen - 1) === "/") {
+    if (pathLen > 1 && path.charAt(pathLen - 1) === "/u-kasi/") {
         path = path.substr(0, pathLen - 1);
         originalPath = originalPath.substr(0, originalPath.length - 1);
         isSlashDropped = true;
@@ -712,7 +712,7 @@ RouteRecognizer.prototype.recognize = function recognize (path) {
         // if a trailing slash was dropped and a star segment is the last segment
         // specified, put the trailing slash back
         if (isSlashDropped && state.pattern && state.pattern.slice(-5) === "(.+)$") {
-            originalPath = originalPath + "/";
+            originalPath = originalPath + "/u-kasi/";
         }
         results = findHandler(state, originalPath, queryParams);
     }
@@ -1622,7 +1622,7 @@ function useMatch(location, matcher, pathArg, matchResolverArgs) {
   const { query: rawQuery = {} } = location;
   const [resolvedMatch, setMatch] = (0,external_wp_element_namespaceObject.useState)();
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    const { [pathArg]: path = "/", ...query } = rawQuery;
+    const { [pathArg]: path = "/u-kasi/", ...query } = rawQuery;
     const ret = matcher.recognize(path)?.[0];
     async function resolveMatch(result) {
       const matchedRoute = result.handler;

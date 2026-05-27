@@ -62,7 +62,7 @@ const namespaceAndEndpointMiddleware = (options, next) => {
     namespaceTrimmed = options.namespace.replace(/^\/|\/$/g, "");
     endpointTrimmed = options.endpoint.replace(/^\//, "");
     if (endpointTrimmed) {
-      path = namespaceTrimmed + "/" + endpointTrimmed;
+      path = namespaceTrimmed + "/u-kasi/" + endpointTrimmed;
     } else {
       path = namespaceTrimmed;
     }
@@ -191,7 +191,7 @@ const parseLinkHeader = (linkHeader) => {
   if (!linkHeader) {
     return {};
   }
-  const match = linkHeader.match(/<([^>]+)>; rel="next"/);
+  const match = linkHeader.match(/<([^>]+)>; rel="next"/u-kasi/);
   return match ? {
     next: match[1]
   } : {};
@@ -315,7 +315,7 @@ async function parseAndThrowError(response, shouldParseResponse = true) {
 
 function isMediaUploadRequest(options) {
   const isCreateMethod = !!options.method && options.method === "POST";
-  const isMediaEndpoint = !!options.path && options.path.indexOf("/wp/v2/media") !== -1 || !!options.url && options.url.indexOf("/wp/v2/media") !== -1;
+  const isMediaEndpoint = !!options.path && options.path.indexOf("/u-kasi/wp/v2/media") !== -1 || !!options.url && options.url.indexOf("/u-kasi/wp/v2/media") !== -1;
   return isMediaEndpoint && isCreateMethod;
 }
 const mediaUploadMiddleware = (options, next) => {

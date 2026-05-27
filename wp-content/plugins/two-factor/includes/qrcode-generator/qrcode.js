@@ -480,7 +480,7 @@ var qrcode = function() {
           qrHtml += ' background-color: ';
           qrHtml += _this.isDark(r, c)? '#000000' : '#ffffff';
           qrHtml += ';';
-          qrHtml += '"/>';
+          qrHtml += '"/u-kasi/>';
         }
 
         qrHtml += '</tr>';
@@ -535,7 +535,7 @@ var qrcode = function() {
           escapeXml(title.text) + '</title>' : '';
       qrSvg += (alt.text) ? '<description id="' + escapeXml(alt.id) + '">' +
           escapeXml(alt.text) + '</description>' : '';
-      qrSvg += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>';
+      qrSvg += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/u-kasi/>';
       qrSvg += '<path d="';
 
       for (r = 0; r < _this.getModuleCount(); r += 1) {
@@ -548,7 +548,7 @@ var qrcode = function() {
         }
       }
 
-      qrSvg += '" stroke="transparent" fill="black"/>';
+      qrSvg += '" stroke="transparent" fill="black"/u-kasi/>';
       qrSvg += '</svg>';
 
       return qrSvg;

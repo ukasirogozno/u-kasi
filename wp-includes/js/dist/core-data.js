@@ -760,7 +760,7 @@ function getUserPermissionsFromAllowHeader(allowedMethods) {
   return permissions;
 }
 function getUserPermissionCacheKey(action, resource, id) {
-  const key = (typeof resource === "object" ? [action, resource.kind, resource.name, resource.id] : [action, resource, id]).filter(Boolean).join("/");
+  const key = (typeof resource === "object" ? [action, resource.kind, resource.name, resource.id] : [action, resource, id]).filter(Boolean).join("/u-kasi/");
   return key;
 }
 
@@ -1304,7 +1304,7 @@ function chunk(arr, chunkSize) {
 async function defaultProcessor(requests) {
   if (maxItems === null) {
     const preflightResponse = await external_wp_apiFetch_default()({
-      path: "/batch/v1",
+      path: "/u-kasi/batch/v1",
       method: "OPTIONS"
     });
     maxItems = preflightResponse.endpoints[0].args.requests.maxItems;
@@ -1312,7 +1312,7 @@ async function defaultProcessor(requests) {
   const results = [];
   for (const batchRequests of chunk(requests, maxItems)) {
     const batchResponse = await external_wp_apiFetch_default()({
-      path: "/batch/v1",
+      path: "/u-kasi/batch/v1",
       method: "POST",
       data: {
         validation: "require-all-validate",
@@ -1764,7 +1764,7 @@ const saveEntityRecord = (kind, name, record, {
     let error;
     let hasError = false;
     try {
-      const path = `${entityConfig.baseURL}${recordId ? "/" + recordId : ""}`;
+      const path = `${entityConfig.baseURL}${recordId ? "/u-kasi/" + recordId : ""}`;
       const persistedRecord = !isNewRecord ? select.getRawEntityRecord(kind, name, recordId) : {};
       if (isAutosave) {
         const currentUser = select.getCurrentUser();
@@ -3768,7 +3768,7 @@ const rootEntitiesConfig = [
     kind: "root",
     key: false,
     name: "__unstableBase",
-    baseURL: "/",
+    baseURL: "/u-kasi/",
     baseURLParams: {
       // Please also change the preload path when changing this.
       // @see lib/compat/wordpress-6.8/preload.php
@@ -3796,14 +3796,14 @@ const rootEntitiesConfig = [
     name: "postType",
     kind: "root",
     key: "slug",
-    baseURL: "/wp/v2/types",
+    baseURL: "/u-kasi/wp/v2/types",
     baseURLParams: { context: "edit" },
     plural: "postTypes"
   },
   {
     name: "media",
     kind: "root",
-    baseURL: "/wp/v2/media",
+    baseURL: "/u-kasi/wp/v2/media",
     baseURLParams: { context: "edit" },
     plural: "mediaItems",
     label: (0,external_wp_i18n_.__)("Media"),
@@ -3814,7 +3814,7 @@ const rootEntitiesConfig = [
     name: "taxonomy",
     kind: "root",
     key: "slug",
-    baseURL: "/wp/v2/taxonomies",
+    baseURL: "/u-kasi/wp/v2/taxonomies",
     baseURLParams: { context: "edit" },
     plural: "taxonomies",
     label: (0,external_wp_i18n_.__)("Taxonomy")
@@ -3822,7 +3822,7 @@ const rootEntitiesConfig = [
   {
     name: "sidebar",
     kind: "root",
-    baseURL: "/wp/v2/sidebars",
+    baseURL: "/u-kasi/wp/v2/sidebars",
     baseURLParams: { context: "edit" },
     plural: "sidebars",
     transientEdits: { blocks: true },
@@ -3831,7 +3831,7 @@ const rootEntitiesConfig = [
   {
     name: "widget",
     kind: "root",
-    baseURL: "/wp/v2/widgets",
+    baseURL: "/u-kasi/wp/v2/widgets",
     baseURLParams: { context: "edit" },
     plural: "widgets",
     transientEdits: { blocks: true },
@@ -3840,7 +3840,7 @@ const rootEntitiesConfig = [
   {
     name: "widgetType",
     kind: "root",
-    baseURL: "/wp/v2/widget-types",
+    baseURL: "/u-kasi/wp/v2/widget-types",
     baseURLParams: { context: "edit" },
     plural: "widgetTypes",
     label: (0,external_wp_i18n_.__)("Widget types")
@@ -3849,7 +3849,7 @@ const rootEntitiesConfig = [
     label: (0,external_wp_i18n_.__)("User"),
     name: "user",
     kind: "root",
-    baseURL: "/wp/v2/users",
+    baseURL: "/u-kasi/wp/v2/users",
     getTitle: (record) => record?.name || record?.slug,
     baseURLParams: { context: "edit" },
     plural: "users",
@@ -3858,7 +3858,7 @@ const rootEntitiesConfig = [
   {
     name: "comment",
     kind: "root",
-    baseURL: "/wp/v2/comments",
+    baseURL: "/u-kasi/wp/v2/comments",
     baseURLParams: { context: "edit" },
     plural: "comments",
     label: (0,external_wp_i18n_.__)("Comment"),
@@ -3867,7 +3867,7 @@ const rootEntitiesConfig = [
   {
     name: "menu",
     kind: "root",
-    baseURL: "/wp/v2/menus",
+    baseURL: "/u-kasi/wp/v2/menus",
     baseURLParams: { context: "edit" },
     plural: "menus",
     label: (0,external_wp_i18n_.__)("Menu"),
@@ -3876,7 +3876,7 @@ const rootEntitiesConfig = [
   {
     name: "menuItem",
     kind: "root",
-    baseURL: "/wp/v2/menu-items",
+    baseURL: "/u-kasi/wp/v2/menu-items",
     baseURLParams: { context: "edit" },
     plural: "menuItems",
     label: (0,external_wp_i18n_.__)("Menu Item"),
@@ -3886,7 +3886,7 @@ const rootEntitiesConfig = [
   {
     name: "menuLocation",
     kind: "root",
-    baseURL: "/wp/v2/menu-locations",
+    baseURL: "/u-kasi/wp/v2/menu-locations",
     baseURLParams: { context: "edit" },
     plural: "menuLocations",
     label: (0,external_wp_i18n_.__)("Menu Location"),
@@ -3896,19 +3896,19 @@ const rootEntitiesConfig = [
     label: (0,external_wp_i18n_.__)("Global Styles"),
     name: "globalStyles",
     kind: "root",
-    baseURL: "/wp/v2/global-styles",
+    baseURL: "/u-kasi/wp/v2/global-styles",
     baseURLParams: { context: "edit" },
     plural: "globalStylesVariations",
     // Should be different from name.
     getTitle: () => (0,external_wp_i18n_.__)("Custom Styles"),
-    getRevisionsUrl: (parentId, revisionId) => `/wp/v2/global-styles/${parentId}/revisions${revisionId ? "/" + revisionId : ""}`,
+    getRevisionsUrl: (parentId, revisionId) => `/wp/v2/global-styles/${parentId}/revisions${revisionId ? "/u-kasi/" + revisionId : ""}`,
     supportsPagination: true
   },
   {
     label: (0,external_wp_i18n_.__)("Themes"),
     name: "theme",
     kind: "root",
-    baseURL: "/wp/v2/themes",
+    baseURL: "/u-kasi/wp/v2/themes",
     baseURLParams: { context: "edit" },
     plural: "themes",
     key: "stylesheet"
@@ -3917,7 +3917,7 @@ const rootEntitiesConfig = [
     label: (0,external_wp_i18n_.__)("Plugins"),
     name: "plugin",
     kind: "root",
-    baseURL: "/wp/v2/plugins",
+    baseURL: "/u-kasi/wp/v2/plugins",
     baseURLParams: { context: "edit" },
     plural: "plugins",
     key: "plugin"
@@ -3926,7 +3926,7 @@ const rootEntitiesConfig = [
     label: (0,external_wp_i18n_.__)("Status"),
     name: "status",
     kind: "root",
-    baseURL: "/wp/v2/statuses",
+    baseURL: "/u-kasi/wp/v2/statuses",
     baseURLParams: { context: "edit" },
     plural: "statuses",
     key: "slug"
@@ -3967,7 +3967,7 @@ const prePersistPostType = (persistedRecord, edits) => {
 };
 async function loadPostTypeEntities() {
   const postTypes = await external_wp_apiFetch_default()({
-    path: "/wp/v2/types?context=view"
+    path: "/u-kasi/wp/v2/types?context=view"
   });
   return Object.entries(postTypes ?? {}).map(([name, postType]) => {
     const isTemplate = ["wp_template", "wp_template_part"].includes(
@@ -3990,7 +3990,7 @@ async function loadPostTypeEntities() {
       __unstablePrePersist: isTemplate ? void 0 : prePersistPostType,
       __unstable_rest_base: postType.rest_base,
       supportsPagination: true,
-      getRevisionsUrl: (parentId, revisionId) => `/${namespace}/${postType.rest_base}/${parentId}/revisions${revisionId ? "/" + revisionId : ""}`,
+      getRevisionsUrl: (parentId, revisionId) => `/${namespace}/${postType.rest_base}/${parentId}/revisions${revisionId ? "/u-kasi/" + revisionId : ""}`,
       revisionKey: isTemplate ? "wp_id" : DEFAULT_ENTITY_KEY
     };
     if (window.__experimentalEnableSync) {
@@ -4001,7 +4001,7 @@ async function loadPostTypeEntities() {
 }
 async function loadTaxonomyEntities() {
   const taxonomies = await external_wp_apiFetch_default()({
-    path: "/wp/v2/taxonomies?context=view"
+    path: "/u-kasi/wp/v2/taxonomies?context=view"
   });
   return Object.entries(taxonomies ?? {}).map(([name, taxonomy]) => {
     const namespace = taxonomy?.rest_namespace ?? "wp/v2";
@@ -4022,7 +4022,7 @@ async function loadSiteEntity() {
     name: "site",
     kind: "root",
     key: false,
-    baseURL: "/wp/v2/settings",
+    baseURL: "/u-kasi/wp/v2/settings",
     meta: {}
   };
   if (window.__experimentalEnableSync) {
@@ -4163,14 +4163,14 @@ var fetch = __webpack_require__(7006);
 
 const getAuthors = (query) => async ({ dispatch }) => {
   const path = (0,external_wp_url_.addQueryArgs)(
-    "/wp/v2/users/?who=authors&per_page=100",
+    "/u-kasi/wp/v2/users/?who=authors&per_page=100",
     query
   );
   const users = await external_wp_apiFetch_default()({ path });
   dispatch.receiveUserQuery(path, users);
 };
 const getCurrentUser = () => async ({ dispatch }) => {
-  const currentUser = await external_wp_apiFetch_default()({ path: "/wp/v2/users/me" });
+  const currentUser = await external_wp_apiFetch_default()({ path: "/u-kasi/wp/v2/users/me" });
   dispatch.receiveCurrentUser(currentUser);
 };
 const getEntityRecord = (kind, name, key = "", query) => async ({ select, dispatch, registry, resolveSelect }) => {
@@ -4210,7 +4210,7 @@ const getEntityRecord = (kind, name, key = "", query) => async ({ select, dispat
       }
     }
     const path = (0,external_wp_url_.addQueryArgs)(
-      entityConfig.baseURL + (key ? "/" + key : ""),
+      entityConfig.baseURL + (key ? "/u-kasi/" + key : ""),
       {
         ...entityConfig.baseURLParams,
         ...query
@@ -4428,7 +4428,7 @@ const getThemeSupports = forward_resolver_default("getCurrentTheme");
 const getEmbedPreview = (url) => async ({ dispatch }) => {
   try {
     const embedProxyResponse = await external_wp_apiFetch_default()({
-      path: (0,external_wp_url_.addQueryArgs)("/oembed/1.0/proxy", { url })
+      path: (0,external_wp_url_.addQueryArgs)("/u-kasi/oembed/1.0/proxy", { url })
     });
     dispatch.receiveEmbedPreview(url, embedProxyResponse);
   } catch (error) {
@@ -4467,9 +4467,9 @@ const canUser = (requestedAction, resource, id) => async ({ dispatch, registry, 
     if (!entityConfig) {
       return;
     }
-    resourcePath = entityConfig.baseURL + (resource.id ? "/" + resource.id : "");
+    resourcePath = entityConfig.baseURL + (resource.id ? "/u-kasi/" + resource.id : "");
   } else {
-    resourcePath = `/wp/v2/${resource}` + (id ? "/" + id : "");
+    resourcePath = `/wp/v2/${resource}` + (id ? "/u-kasi/" + id : "");
   }
   let response;
   try {
@@ -4591,7 +4591,7 @@ const getBlockPatterns = () => async ({ dispatch }) => {
 };
 const getBlockPatternCategories = () => async ({ dispatch }) => {
   const categories = await external_wp_apiFetch_default()({
-    path: "/wp/v2/block-patterns/categories"
+    path: "/u-kasi/wp/v2/block-patterns/categories"
   });
   dispatch({ type: "RECEIVE_BLOCK_PATTERN_CATEGORIES", categories });
 };
@@ -4617,7 +4617,7 @@ const getUserPatternCategories = () => async ({ dispatch, resolveSelect }) => {
 };
 const getNavigationFallbackId = () => async ({ dispatch, select, registry }) => {
   const fallback = await external_wp_apiFetch_default()({
-    path: (0,external_wp_url_.addQueryArgs)("/wp-block-editor/v1/navigation-fallback", {
+    path: (0,external_wp_url_.addQueryArgs)("/u-kasi/wp-block-editor/v1/navigation-fallback", {
       _embed: true
     })
   });
@@ -4649,7 +4649,7 @@ const getNavigationFallbackId = () => async ({ dispatch, select, registry }) => 
 };
 const getDefaultTemplateId = (query) => async ({ dispatch, registry, resolveSelect }) => {
   const template = await external_wp_apiFetch_default()({
-    path: (0,external_wp_url_.addQueryArgs)("/wp/v2/templates/lookup", query)
+    path: (0,external_wp_url_.addQueryArgs)("/u-kasi/wp/v2/templates/lookup", query)
   });
   await resolveSelect.getEntitiesConfig("postType");
   if (template?.id) {
@@ -4862,7 +4862,7 @@ async function fetchLinkSuggestions(search, searchOptions = {}, editorSettings =
   if (!type || type === "post") {
     queries.push(
       external_wp_apiFetch_default()({
-        path: (0,external_wp_url_.addQueryArgs)("/wp/v2/search", {
+        path: (0,external_wp_url_.addQueryArgs)("/u-kasi/wp/v2/search", {
           search,
           page,
           per_page: perPage,
@@ -4886,7 +4886,7 @@ async function fetchLinkSuggestions(search, searchOptions = {}, editorSettings =
   if (!type || type === "term") {
     queries.push(
       external_wp_apiFetch_default()({
-        path: (0,external_wp_url_.addQueryArgs)("/wp/v2/search", {
+        path: (0,external_wp_url_.addQueryArgs)("/u-kasi/wp/v2/search", {
           search,
           page,
           per_page: perPage,
@@ -4910,7 +4910,7 @@ async function fetchLinkSuggestions(search, searchOptions = {}, editorSettings =
   if (!disablePostFormats && (!type || type === "post-format")) {
     queries.push(
       external_wp_apiFetch_default()({
-        path: (0,external_wp_url_.addQueryArgs)("/wp/v2/search", {
+        path: (0,external_wp_url_.addQueryArgs)("/u-kasi/wp/v2/search", {
           search,
           page,
           per_page: perPage,
@@ -4934,7 +4934,7 @@ async function fetchLinkSuggestions(search, searchOptions = {}, editorSettings =
   if (!type || type === "attachment") {
     queries.push(
       external_wp_apiFetch_default()({
-        path: (0,external_wp_url_.addQueryArgs)("/wp/v2/media", {
+        path: (0,external_wp_url_.addQueryArgs)("/u-kasi/wp/v2/media", {
           search,
           page,
           per_page: perPage
@@ -4995,7 +4995,7 @@ function tokenize(text) {
 
 const CACHE = /* @__PURE__ */ new Map();
 const fetchUrlData = async (url, options = {}) => {
-  const endpoint = "/wp-block-editor/v1/url-details";
+  const endpoint = "/u-kasi/wp-block-editor/v1/url-details";
   const args = {
     url: (0,external_wp_url_.prependHTTP)(url)
   };
@@ -5029,7 +5029,7 @@ var experimental_fetch_url_data_default = fetchUrlData;
 
 async function fetchBlockPatterns() {
   const restPatterns = await external_wp_apiFetch_default()({
-    path: "/wp/v2/block-patterns/patterns"
+    path: "/u-kasi/wp/v2/block-patterns/patterns"
   });
   if (!restPatterns) {
     return [];
@@ -5804,7 +5804,7 @@ function getAuthors(state, query) {
     alternative: "select( 'core' ).getUsers({ who: 'authors' })"
   });
   const path = (0,external_wp_url_.addQueryArgs)(
-    "/wp/v2/users/?who=authors&per_page=100",
+    "/u-kasi/wp/v2/users/?who=authors&per_page=100",
     query
   );
   return getUserQueryResults(state, path);

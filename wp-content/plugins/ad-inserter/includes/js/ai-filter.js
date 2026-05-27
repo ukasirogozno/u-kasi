@@ -311,7 +311,7 @@ if (typeof ai_filter != 'undefined') {
 
     ai_filter_hook_data_requested = true;
 
-//    var page = site_url+"/wp-admin/admin-ajax.php?action=ai_ajax&filter-hook-data=all&ai_check=" + ai_data_id + '&http_user_agent=' + encodeURIComponent (user_agent) + '&http_accept_language=' + encodeURIComponent (language) + ai_random_parameter ();
+//    var page = site_url+"/u-kasi/wp-admin/admin-ajax.php?action=ai_ajax&filter-hook-data=all&ai_check=" + ai_data_id + '&http_user_agent=' + encodeURIComponent (user_agent) + '&http_accept_language=' + encodeURIComponent (language) + ai_random_parameter ();
 //    $.get (page, function (filter_hook_data) {
     // ***
     var url_data = {

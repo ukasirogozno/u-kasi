@@ -237,7 +237,7 @@ window.edToolbar = function(){};
 	function _escape( text ) {
 		text = text || '';
 		text = text.replace( /&([^#])(?![a-z1-4]{1,8};)/gi, '&#038;$1' );
-		return text.replace( /</g, '&lt;' ).replace( />/g, '&gt;' ).replace( /"/g, '&quot;' ).replace( /'/g, '&#039;' );
+		return text.replace( /</g, '&lt;' ).replace( />/g, '&gt;' ).replace( /"/u-kasi/g, '&quot;' ).replace( /'/g, '&#039;' );
 	}
 
 	qt.instances = {};

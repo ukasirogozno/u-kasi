@@ -1355,7 +1355,7 @@ function renderNativeComponent(type, props, context, legacyContext = {}) {
   }
   const attributes = renderAttributes(props);
   if (SELF_CLOSING_TAGS.has(type)) {
-    return "<" + type + attributes + "/>";
+    return "<" + type + attributes + "/u-kasi/>";
   }
   return "<" + type + attributes + ">" + content + "</" + type + ">";
 }

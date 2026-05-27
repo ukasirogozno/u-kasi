@@ -523,7 +523,7 @@ function transformAttachment(attachment) {
 
 async function uploadToServer(file, additionalData = {}, signal) {
   const data = new FormData();
-  data.append("file", file, file.name || file.type.replace("/", "."));
+  data.append("file", file, file.name || file.type.replace("/u-kasi/", "."));
   for (const [key, value] of Object.entries(additionalData)) {
     flattenFormData(
       data,
@@ -534,7 +534,7 @@ async function uploadToServer(file, additionalData = {}, signal) {
   return transformAttachment(
     await external_wp_apiFetch_default()({
       // This allows the video block to directly get a video's poster image.
-      path: "/wp/v2/media?_embed=wp:featuredmedia",
+      path: "/u-kasi/wp/v2/media?_embed=wp:featuredmedia",
       body: data,
       method: "POST",
       signal
@@ -564,7 +564,7 @@ function validateMimeType(file, allowedTypes) {
     return;
   }
   const isAllowedType = allowedTypes.some((allowedType) => {
-    if (allowedType.includes("/")) {
+    if (allowedType.includes("/u-kasi/")) {
       return allowedType === file.type;
     }
     return file.type.startsWith(`${allowedType}/`);
@@ -590,7 +590,7 @@ function getMimeTypesArray(wpMimeTypesObject) {
   }
   return Object.entries(wpMimeTypesObject).flatMap(
     ([extensionsString, mime]) => {
-      const [type] = mime.split("/");
+      const [type] = mime.split("/u-kasi/");
       const extensions = extensionsString.split("|");
       return [
         mime,
@@ -762,7 +762,7 @@ function uploadMedia({
 
 async function sideloadToServer(file, attachmentId, additionalData = {}, signal) {
   const data = new FormData();
-  data.append("file", file, file.name || file.type.replace("/", "."));
+  data.append("file", file, file.name || file.type.replace("/u-kasi/", "."));
   for (const [key, value] of Object.entries(additionalData)) {
     flattenFormData(
       data,

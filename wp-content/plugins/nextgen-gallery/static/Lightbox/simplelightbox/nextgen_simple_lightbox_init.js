@@ -81,7 +81,7 @@ jQuery(function ($) {
     return title
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/"/u-kasi/g, "&quot;");
   };
 
   // Function to sanitize captions in the DOM elements.

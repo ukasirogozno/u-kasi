@@ -4307,7 +4307,7 @@ function stringifyNode(node, custom) {
     buf = node.quote || "";
     return buf + value + (node.unclosed ? "" : buf);
   } else if (type === "comment") {
-    return "/*" + value + (node.unclosed ? "" : "*/");
+    return "/u-kasi/*" + value + (node.unclosed ? "" : "*/");
   } else if (type === "div") {
     return (node.before || "") + value + (node.after || "");
   } else if (Array.isArray(node.nodes)) {
@@ -6394,7 +6394,7 @@ var closeParentheses = ")".charCodeAt(0);
 var singleQuote = "'".charCodeAt(0);
 var doubleQuote = '"'.charCodeAt(0);
 var backslash = "\\".charCodeAt(0);
-var slash = "/".charCodeAt(0);
+var slash = "/u-kasi/".charCodeAt(0);
 var comma = ",".charCodeAt(0);
 var colon = ":".charCodeAt(0);
 var star = "*".charCodeAt(0);
@@ -9414,10 +9414,10 @@ function preferences(state = PREFERENCES_DEFAULTS, action) {
             attributes
           );
           if (match?.name) {
-            id += "/" + match.name;
+            id += "/u-kasi/" + match.name;
           }
           if (blockName === "core/block") {
-            id += "/" + attributes.ref;
+            id += "/u-kasi/" + attributes.ref;
           }
           return {
             ...prevUsage,
@@ -19003,7 +19003,7 @@ function addLeadingSlash(url) {
   if (!trimmedURL?.length) {
     return url;
   }
-  return url?.replace(/^\/?/, "/");
+  return url?.replace(/^\/?/, "/u-kasi/");
 }
 function removeTrailingSlash(url) {
   const trimmedURL = url?.trim();
@@ -29819,7 +29819,7 @@ function getBlockCSSSelector(blockType, target = "root", options = {}) {
   } else if (supports?.__experimentalSelector) {
     rootSelector = supports.__experimentalSelector;
   } else {
-    rootSelector = ".wp-block-" + name.replace("core/", "").replace("/", "-");
+    rootSelector = ".wp-block-" + name.replace("core/", "").replace("/u-kasi/", "-");
   }
   if (path === "root") {
     return rootSelector;
@@ -30700,7 +30700,7 @@ function getPresetsSvgFilters(blockPresets = {}) {
 function flattenTree(input = {}, prefix, token) {
   let result = [];
   Object.keys(input).forEach((key) => {
-    const newKey = prefix + use_global_styles_output_kebabCase(key.replace("/", "-"));
+    const newKey = prefix + use_global_styles_output_kebabCase(key.replace("/u-kasi/", "-"));
     const newLeaf = input[key];
     if (newLeaf instanceof Object) {
       const newPrefix = newKey + token;
@@ -31834,7 +31834,7 @@ function useLayoutClasses(blockAttributes = {}, blockName = "") {
   const layoutClassnames = [];
   if (LAYOUT_DEFINITIONS[usedLayout?.type || "default"]?.className) {
     const baseClassName = LAYOUT_DEFINITIONS[usedLayout?.type || "default"]?.className;
-    const splitBlockName = blockName.split("/");
+    const splitBlockName = blockName.split("/u-kasi/");
     const fullBlockName = splitBlockName[0] === "core" ? splitBlockName.pop() : splitBlockName.join("-");
     const compoundClassName = `wp-block-${fullBlockName}-${baseClassName}`;
     layoutClassnames.push(baseClassName, compoundClassName);
@@ -32724,7 +32724,7 @@ function validateMimeType(file, allowedTypes) {
     return;
   }
   const isAllowedType = allowedTypes.some((allowedType) => {
-    if (allowedType.includes("/")) {
+    if (allowedType.includes("/u-kasi/")) {
       return allowedType === file.type;
     }
     return file.type.startsWith(`${allowedType}/`);
@@ -32750,7 +32750,7 @@ function getMimeTypesArray(wpMimeTypesObject) {
   }
   return Object.entries(wpMimeTypesObject).flatMap(
     ([extensionsString, mime]) => {
-      const [type] = mime.split("/");
+      const [type] = mime.split("/u-kasi/");
       const extensions = extensionsString.split("|");
       return [
         mime,
@@ -32906,8 +32906,8 @@ function convertBlobToFile(fileOrBlob) {
   if (fileOrBlob instanceof File) {
     return fileOrBlob;
   }
-  const ext = fileOrBlob.type.split("/")[1];
-  const mediaType = "application/pdf" === fileOrBlob.type ? "document" : fileOrBlob.type.split("/")[0];
+  const ext = fileOrBlob.type.split("/u-kasi/")[1];
+  const mediaType = "application/pdf" === fileOrBlob.type ? "document" : fileOrBlob.type.split("/u-kasi/")[0];
   return new File([fileOrBlob], `${mediaType}.${ext}`, {
     type: fileOrBlob.type
   });
@@ -41555,7 +41555,7 @@ var no_results_default = InserterNoResults;
 
 
 
-const getBlockNamespace = (item) => item.name.split("/")[0];
+const getBlockNamespace = (item) => item.name.split("/u-kasi/")[0];
 const MAX_SUGGESTED_ITEMS = 6;
 const block_types_tab_EMPTY_ARRAY = [];
 function BlockTypesTabPanel({
@@ -42528,7 +42528,7 @@ const searchBlockItems = (items, categories, collections, searchInput) => {
   }
   const config = {
     getCategory: (item) => categories.find(({ slug }) => slug === item.category)?.title,
-    getCollection: (item) => collections[item.name.split("/")[0]]?.title
+    getCollection: (item) => collections[item.name.split("/u-kasi/")[0]]?.title
   };
   return searchItems(items, searchInput, config);
 };
@@ -42937,10 +42937,10 @@ function MobileTabNavigation({ categories, children }) {
   return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(
     external_wp_components_namespaceObject.Navigator,
     {
-      initialPath: "/",
+      initialPath: "/u-kasi/",
       className: "block-editor-inserter__mobile-tab-navigation",
       children: [
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { children: categories.map((category) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/u-kasi/", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { children: categories.map((category) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
           external_wp_components_namespaceObject.Navigator.Button,
           {
             path: `/category/${category.name}`,
@@ -46275,7 +46275,7 @@ function BlockHooksControlPure({
   }
   const groupedHookedBlocks = hookedBlocksForCurrentBlock.reduce(
     (groups, block) => {
-      const [namespace] = block.name.split("/");
+      const [namespace] = block.name.split("/u-kasi/");
       if (!groups[namespace]) {
         groups[namespace] = [];
       }
@@ -47606,7 +47606,7 @@ function createBlockCompleter() {
   return {
     name: "blocks",
     className: "block-editor-autocompleters__block",
-    triggerPrefix: "/",
+    triggerPrefix: "/u-kasi/",
     useItems(filterValue) {
       const { rootClientId, selectedBlockId, prioritizedBlocks } = (0,external_wp_data_namespaceObject.useSelect)((select) => {
         const {
@@ -47727,7 +47727,7 @@ function createLinkCompleter() {
     triggerPrefix: "[[",
     options: async (letters) => {
       let options = await external_wp_apiFetch_default()({
-        path: (0,external_wp_url_namespaceObject.addQueryArgs)("/wp/v2/search", {
+        path: (0,external_wp_url_namespaceObject.addQueryArgs)("/u-kasi/wp/v2/search", {
           per_page: SHOWN_SUGGESTIONS,
           search: letters,
           type: "post",
@@ -53294,7 +53294,7 @@ const getTransformCommands = () => function useTransformCommands() {
     (transformation) => {
       const { name, title, icon } = transformation;
       return {
-        name: "core/block-editor/transform-to-" + name.replace("/", "-"),
+        name: "core/block-editor/transform-to-" + name.replace("/u-kasi/", "-"),
         /* translators: %s: Block or block variation name. */
         label: (0,external_wp_i18n_namespaceObject.sprintf)((0,external_wp_i18n_namespaceObject.__)("Transform to %s"), title),
         icon: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(block_icon_default, { icon }),
@@ -57855,7 +57855,7 @@ function AspectRatioGroup({
   )) });
 }
 function ratioToNumber(str) {
-  const [a, b, ...rest] = str.split("/").map(Number);
+  const [a, b, ...rest] = str.split("/u-kasi/").map(Number);
   if (a <= 0 || b <= 0 || Number.isNaN(a) || Number.isNaN(b) || rest.length) {
     return NaN;
   }
@@ -59977,7 +59977,7 @@ function MediaPlaceholder({
     }
     const uploadedMediaList = await Promise.all(
       blocks.map((block) => {
-        const blockType = block.name.split("/")[1];
+        const blockType = block.name.split("/u-kasi/")[1];
         if (block.attributes.id) {
           block.attributes.type = blockType;
           return block.attributes;

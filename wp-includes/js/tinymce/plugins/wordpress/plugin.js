@@ -174,7 +174,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 					moretext = '';
 
 				if ( image.indexOf( 'data-wp-more="more"' ) !== -1 ) {
-					if ( match = image.match( /data-wp-more-text="([^"]+)"/ ) ) {
+					if ( match = image.match( /data-wp-more-text="([^"]+)"/u-kasi/ ) ) {
 						moretext = match[1];
 					}
 
@@ -182,7 +182,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 				} else if ( image.indexOf( 'data-wp-more="nextpage"' ) !== -1 ) {
 					string = '<!--nextpage-->';
 				} else if ( image.indexOf( 'data-wp-preserve' ) !== -1 ) {
-					if ( match = image.match( / data-wp-preserve="([^"]+)"/ ) ) {
+					if ( match = image.match( / data-wp-preserve="([^"]+)"/u-kasi/ ) ) {
 						string = decodeURIComponent( match[1] );
 					}
 				}

@@ -457,7 +457,7 @@ div.bws_banner_on_plugin_page .icon {
 * affiliate postbox
 */
 #bws-affiliate-postbox {
-	background: url("//wp-content/plugins/google-captcha/bws_menu/images/affiliate-background.png") no-repeat center #1a3e59;
+	background: url("/u-kasi//wp-content/plugins/google-captcha/bws_menu/images/affiliate-background.png") no-repeat center #1a3e59;
 	overflow: hidden;
 	position: relative;
 	padding: 12px;
@@ -514,7 +514,7 @@ span.bws_code {
 * styles help tooltips
 */
 .bws_help_box {
-	background-image: url("//wp-content/plugins/google-captcha/bws_menu/images/tooltip_icons.png");
+	background-image: url("/u-kasi//wp-content/plugins/google-captcha/bws_menu/images/tooltip_icons.png");
 	background-repeat: no-repeat;
 	cursor: pointer;
 	height: 28px;

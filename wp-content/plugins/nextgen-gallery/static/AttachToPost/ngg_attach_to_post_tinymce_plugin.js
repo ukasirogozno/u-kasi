@@ -55,7 +55,7 @@
       editor.addButton("NextGEN_AttachToPost", {
         title: "ngg_attach_to_post.title",
         cmd: "ngg_attach_to_post",
-        image: plugin_url + "/igw_button.png",
+        image: plugin_url + "/u-kasi/igw_button.png",
       });
 
       /**

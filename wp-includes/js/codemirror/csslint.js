@@ -4156,7 +4156,7 @@ function PropertyValuePart(text, line, col, optionalHint) {
         this.type   = "function";
         this.name   = RegExp.$1;
         this.value  = text;
-    } else if (/^"([^\n\r\f\\"]|\\\r\n|\\[^\r0-9a-f]|\\[0-9a-f]{1,6}(\r\n|[ \n\r\t\f])?)*"/i.test(text)) {    //double-quoted string
+    } else if (/^"([^\n\r\f\\"]|\\\r\n|\\[^\r0-9a-f]|\\[0-9a-f]{1,6}(\r\n|[ \n\r\t\f])?)*"/u-kasi/i.test(text)) {    //double-quoted string
         this.type   = "string";
         this.value  = PropertyValuePart.parseString(text);
     } else if (/^'([^\n\r\f\\']|\\\r\n|\\[^\r0-9a-f]|\\[0-9a-f]{1,6}(\r\n|[ \n\r\t\f])?)*'/i.test(text)) {    //single-quoted string
@@ -4640,7 +4640,7 @@ TokenStream.prototype = mix(new TokenStreamBase(), {
                  * - SLASH
                  * - CHAR
                  */
-                case "/":
+                case "/u-kasi/":
 
                     if (reader.peek() === "*") {
                         token = this.commentToken(c, startLine, startCol);
@@ -5115,7 +5115,7 @@ TokenStream.prototype = mix(new TokenStreamBase(), {
         while (c) {
 
             //there can be a comment in here
-            if (c === "/") {
+            if (c === "/u-kasi/") {
 
                 //if the next character isn't a star, then this isn't a valid !important token
                 if (reader.peek() !== "*") {
@@ -5571,7 +5571,7 @@ TokenStream.prototype = mix(new TokenStreamBase(), {
                 comment += c;
 
                 //look for end of comment
-                if (comment.length > 2 && c === "*" && reader.peek() === "/") {
+                if (comment.length > 2 && c === "*" && reader.peek() === "/u-kasi/") {
                     comment += reader.read();
                     break;
                 }
@@ -5713,7 +5713,7 @@ var Tokens = module.exports = [
     },
     {
         name: "SLASH",
-        text: "/"
+        text: "/u-kasi/"
     },
     {
         name: "MINUS",
@@ -10399,7 +10399,7 @@ CSSLint.addRule({
                     // ignore rollups for now
                     if (!message.rollup) {
                         output.push("<error line=\"" + message.line + "\" column=\"" + message.col + "\" severity=\"" + message.type + "\"" +
-                          " message=\"" + xmlEscape(message.message) + "\" source=\"" + generateSource(message.rule) +"\"/>");
+                          " message=\"" + xmlEscape(message.message) + "\" source=\"" + generateSource(message.rule) +"\"/u-kasi/>");
                     }
                 });
                 output.push("</file>");
@@ -10524,17 +10524,17 @@ CSSLint.addFormatter({
             if (!str || str.constructor !== String) {
                 return "";
             }
-            return str.replace(/"/g, "'").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            return str.replace(/"/u-kasi/g, "'").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
         };
 
         if (messages.length > 0) {
             output.push("<file name=\""+filename+"\">");
             CSSLint.Util.forEach(messages, function (message) {
                 if (message.rollup) {
-                    output.push("<issue severity=\"" + message.type + "\" reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/>");
+                    output.push("<issue severity=\"" + message.type + "\" reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/u-kasi/>");
                 } else {
                     output.push("<issue line=\"" + message.line + "\" char=\"" + message.col + "\" severity=\"" + message.type + "\"" +
-                        " reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/>");
+                        " reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/u-kasi/>");
                 }
             });
             output.push("</file>");
@@ -10668,7 +10668,7 @@ CSSLint.addFormatter({
                 return "";
             }
 
-            return str.replace(/"/g, "'").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            return str.replace(/"/u-kasi/g, "'").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
         };
 
@@ -10756,7 +10756,7 @@ CSSLint.addFormatter({
             if (!str || str.constructor !== String) {
                 return "";
             }
-            return str.replace(/"/g, "'").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            return str.replace(/"/u-kasi/g, "'").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
         };
 
         if (messages.length > 0) {
@@ -10764,14 +10764,14 @@ CSSLint.addFormatter({
             output.push("<file name=\""+filename+"\">");
             CSSLint.Util.forEach(messages, function (message) {
                 if (message.rollup) {
-                    output.push("<issue severity=\"" + message.type + "\" reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/>");
+                    output.push("<issue severity=\"" + message.type + "\" reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/u-kasi/>");
                 } else {
                     var rule = "";
                     if (message.rule && message.rule.id) {
                         rule = "rule=\"" + escapeSpecialCharacters(message.rule.id) + "\" ";
                     }
                     output.push("<issue " + rule + "line=\"" + message.line + "\" char=\"" + message.col + "\" severity=\"" + message.type + "\"" +
-                        " reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/>");
+                        " reason=\"" + escapeSpecialCharacters(message.message) + "\" evidence=\"" + escapeSpecialCharacters(message.evidence) + "\"/u-kasi/>");
                 }
             });
             output.push("</file>");
@@ -10829,7 +10829,7 @@ CSSLint.addFormatter({
         }
         output += " in " + filename + ".";
 
-        var pos = filename.lastIndexOf("/"),
+        var pos = filename.lastIndexOf("/u-kasi/"),
             shortFilename = filename;
 
         if (pos === -1) {

@@ -729,7 +729,7 @@ function isValidQueryString(queryString) {
 function getPathAndQueryString(url) {
   const path = getPath(url);
   const queryString = getQueryString(url);
-  let value = "/";
+  let value = "/u-kasi/";
   if (path) {
     value += path;
   }
@@ -891,14 +891,14 @@ function filterURLForDisplay(url, maxLength = null) {
   }
   let filteredURL = url.replace(/^[a-z\-.\+]+[0-9]*:(\/\/)?/i, "").replace(/^www\./i, "");
   if (filteredURL.match(/^[^\/]+\/$/)) {
-    filteredURL = filteredURL.replace("/", "");
+    filteredURL = filteredURL.replace("/u-kasi/", "");
   }
   const fileRegexp = /\/([^\/?]+)\.(?:[\w]+)(?=\?|$)/;
   if (!maxLength || filteredURL.length <= maxLength || !filteredURL.match(fileRegexp)) {
     return filteredURL;
   }
   filteredURL = filteredURL.split("?")[0];
-  const urlPieces = filteredURL.split("/");
+  const urlPieces = filteredURL.split("/u-kasi/");
   const file = urlPieces[urlPieces.length - 1];
   if (file.length <= maxLength) {
     return "\u2026" + filteredURL.slice(-maxLength);
@@ -933,7 +933,7 @@ function getFilename(url) {
     return;
   }
   try {
-    filename = new URL(url, "http://example.com").pathname.split("/").pop();
+    filename = new URL(url, "http://example.com").pathname.split("/u-kasi/").pop();
   } catch (error) {
   }
   if (filename) {

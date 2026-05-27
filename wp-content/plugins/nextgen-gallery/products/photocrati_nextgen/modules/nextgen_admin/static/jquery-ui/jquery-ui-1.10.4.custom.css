@@ -607,7 +607,7 @@ button.ui-button::-moz-focus-inner {
     height: 100%;
 }
 .ui-progressbar .ui-progressbar-overlay {
-    background: url("//wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_admin/static/jquery-ui/images/animated-overlay.gif");
+    background: url("/u-kasi//wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_admin/static/jquery-ui/images/animated-overlay.gif");
     height: 100%;
     filter: alpha(opacity=25);
     opacity: 0.25;

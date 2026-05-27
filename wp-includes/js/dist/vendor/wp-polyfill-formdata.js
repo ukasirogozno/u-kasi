@@ -113,7 +113,7 @@ if (typeof Blob !== 'undefined' && (typeof FormData === 'undefined' || !FormData
     }
   }
 
-  const escape = str => str.replace(/\n/g, '%0A').replace(/\r/g, '%0D').replace(/"/g, '%22')
+  const escape = str => str.replace(/\n/g, '%0A').replace(/\r/g, '%0D').replace(/"/u-kasi/g, '%22')
 
   /**
    * @implements {Iterable}

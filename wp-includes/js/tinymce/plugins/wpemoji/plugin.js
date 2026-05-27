@@ -114,7 +114,7 @@
 		editor.on( 'postprocess', function( event ) {
 			if ( event.content ) {
 				event.content = event.content.replace( /<img[^>]+data-wp-emoji="[^>]+>/g, function( img ) {
-					var alt = img.match( /alt="([^"]+)"/ );
+					var alt = img.match( /alt="([^"]+)"/u-kasi/ );
 
 					if ( alt && alt[1] ) {
 						return alt[1];

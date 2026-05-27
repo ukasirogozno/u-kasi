@@ -248,52 +248,52 @@ function resolveIfNotPlainOrUrl(relUrl, parentUrl) {
     );
   }
   if (relUrl.indexOf("\\") !== -1) {
-    relUrl = relUrl.replace(backslashRegEx, "/");
+    relUrl = relUrl.replace(backslashRegEx, "/u-kasi/");
   }
-  if (relUrl[0] === "/" && relUrl[1] === "/") {
+  if (relUrl[0] === "/u-kasi/" && relUrl[1] === "/u-kasi/") {
     return parentUrl.slice(0, parentUrl.indexOf(":") + 1) + relUrl;
-  } else if (relUrl[0] === "." && (relUrl[1] === "/" || relUrl[1] === "." && (relUrl[2] === "/" || relUrl.length === 2 && (relUrl += "/")) || relUrl.length === 1 && (relUrl += "/")) || relUrl[0] === "/") {
+  } else if (relUrl[0] === "." && (relUrl[1] === "/u-kasi/" || relUrl[1] === "." && (relUrl[2] === "/u-kasi/" || relUrl.length === 2 && (relUrl += "/u-kasi/")) || relUrl.length === 1 && (relUrl += "/u-kasi/")) || relUrl[0] === "/u-kasi/") {
     const parentProtocol = parentUrl.slice(
       0,
       parentUrl.indexOf(":") + 1
     );
     let pathname;
-    if (parentUrl[parentProtocol.length + 1] === "/") {
+    if (parentUrl[parentProtocol.length + 1] === "/u-kasi/") {
       if (parentProtocol !== "file:") {
         pathname = parentUrl.slice(parentProtocol.length + 2);
-        pathname = pathname.slice(pathname.indexOf("/") + 1);
+        pathname = pathname.slice(pathname.indexOf("/u-kasi/") + 1);
       } else {
         pathname = parentUrl.slice(8);
       }
     } else {
       pathname = parentUrl.slice(
-        parentProtocol.length + (parentUrl[parentProtocol.length] === "/")
+        parentProtocol.length + (parentUrl[parentProtocol.length] === "/u-kasi/")
       );
     }
-    if (relUrl[0] === "/") {
+    if (relUrl[0] === "/u-kasi/") {
       return parentUrl.slice(0, parentUrl.length - pathname.length - 1) + relUrl;
     }
-    const segmented = pathname.slice(0, pathname.lastIndexOf("/") + 1) + relUrl;
+    const segmented = pathname.slice(0, pathname.lastIndexOf("/u-kasi/") + 1) + relUrl;
     const output = [];
     let segmentIndex = -1;
     for (let i = 0; i < segmented.length; i++) {
       if (segmentIndex !== -1) {
-        if (segmented[i] === "/") {
+        if (segmented[i] === "/u-kasi/") {
           output.push(segmented.slice(segmentIndex, i + 1));
           segmentIndex = -1;
         }
         continue;
       } else if (segmented[i] === ".") {
-        if (segmented[i + 1] === "." && (segmented[i + 2] === "/" || i + 2 === segmented.length)) {
+        if (segmented[i + 1] === "." && (segmented[i + 2] === "/u-kasi/" || i + 2 === segmented.length)) {
           output.pop();
           i += 2;
           continue;
-        } else if (segmented[i + 1] === "/" || i + 1 === segmented.length) {
+        } else if (segmented[i + 1] === "/u-kasi/" || i + 1 === segmented.length) {
           i += 1;
           continue;
         }
       }
-      while (segmented[i] === "/") {
+      while (segmented[i] === "/u-kasi/") {
         i++;
       }
       segmentIndex = i;
@@ -317,7 +317,7 @@ function getMatch(path, matchObj) {
     if (segment in matchObj) {
       return segment;
     }
-  } while ((sepIndex = path.lastIndexOf("/", sepIndex - 1)) !== -1);
+  } while ((sepIndex = path.lastIndexOf("/u-kasi/", sepIndex - 1)) !== -1);
 }
 function applyPackages(id, packages) {
   const pkgName = getMatch(id, packages);
@@ -340,7 +340,7 @@ function resolveImportMap(importMap2, resolvedOrPlain, parentUrl) {
       return packageResolution;
     }
     scopeUrl = getMatch(
-      scopeUrl.slice(0, scopeUrl.lastIndexOf("/")),
+      scopeUrl.slice(0, scopeUrl.lastIndexOf("/u-kasi/")),
       importMap2.scopes
     );
   }

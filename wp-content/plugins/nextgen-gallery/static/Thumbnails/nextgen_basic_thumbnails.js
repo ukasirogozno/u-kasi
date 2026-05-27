@@ -29,12 +29,12 @@ jQuery(function($) {
                 /* TODO: Remove this entire chunk. It should be unecessary.
                 // Custom permalinks are disabled. So we have to redirect to /index.php/nggallery/image/n?qs=1
                 if (photocrati_ajax.wp_root_url.indexOf('index.php') >= 0) {
-                    url = photocrati_ajax.wp_root_url + "/" + photocrati_ajax.ngg_param_slug + "/image/" + image_id;
+                    url = photocrati_ajax.wp_root_url + "/u-kasi/" + photocrati_ajax.ngg_param_slug + "/u-kasi/image/" + image_id;
                     if (window.location.toString().indexOf('?') >= 0)
                         url += '?'+window.location.toString().split('?').pop();
                 } else {
                     // Just append the slug
-                    url += "/" + photocrati_ajax.ngg_param_slug + "/image/" + image_id;
+                    url += "/u-kasi/" + photocrati_ajax.ngg_param_slug + "/u-kasi/image/" + image_id;
                 } */
 
                 window.location = url;

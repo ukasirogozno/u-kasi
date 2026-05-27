@@ -3153,7 +3153,7 @@ module.exports = window["React"];
 
   module.exports = ZStream;
 
-  },{}],"/lib/inflate.js":[function(require,module,exports){
+  },{}],"/u-kasi/lib/inflate.js":[function(require,module,exports){
   'use strict';
 
 
@@ -3578,7 +3578,7 @@ module.exports = window["React"];
   exports.inflateRaw = inflateRaw;
   exports.ungzip  = inflate;
 
-  },{"./utils/common":1,"./utils/strings":2,"./zlib/constants":4,"./zlib/gzheader":6,"./zlib/inflate":8,"./zlib/messages":10,"./zlib/zstream":11}]},{},[])("/lib/inflate.js")
+  },{"./utils/common":1,"./utils/strings":2,"./zlib/constants":4,"./zlib/gzheader":6,"./zlib/inflate":8,"./zlib/messages":10,"./zlib/zstream":11}]},{},[])("/u-kasi/lib/inflate.js")
   });
 /* eslint-enable */
 
@@ -7962,11 +7962,11 @@ const SiteHubMobile = (0,external_wp_element_.memo)(
     }, []);
     const { open: openCommandCenter } = (0,external_wp_data_.useDispatch)(external_wp_commands_namespaceObject.store);
     let backPath;
-    if (path !== "/") {
+    if (path !== "/u-kasi/") {
       if (isBlockTheme || isClassicThemeWithStyleBookSupport) {
-        backPath = "/";
-      } else if (path !== "/pattern") {
-        backPath = "/pattern";
+        backPath = "/u-kasi/";
+      } else if (path !== "/u-kasi/pattern") {
+        backPath = "/u-kasi/pattern";
       }
     }
     const backButtonProps = {
@@ -8706,7 +8706,7 @@ var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_w
 
 
 
-const ACTIVE_THEMES_URL = "/wp/v2/themes?status=active";
+const ACTIVE_THEMES_URL = "/u-kasi/wp/v2/themes?status=active";
 function useActualCurrentTheme() {
   const [currentTheme, setCurrentTheme] = (0,external_wp_element_.useState)();
   (0,external_wp_element_.useEffect)(() => {
@@ -9145,7 +9145,7 @@ const getGlobalStylesToggleWelcomeGuideCommands = () => function useGlobalStyles
         callback: ({ close }) => {
           close();
           if (canvas !== "edit") {
-            history.navigate("/styles?canvas=edit", {
+            history.navigate("/u-kasi/styles?canvas=edit", {
               transition: "canvas-mode-edit-transition"
             });
           }
@@ -9212,7 +9212,7 @@ const getGlobalStylesOpenRevisionsCommands = () => function useGlobalStylesOpenR
         callback: ({ close }) => {
           close();
           if (canvas !== "edit") {
-            history.navigate("/styles?canvas=edit", {
+            history.navigate("/u-kasi/styles?canvas=edit", {
               transition: "canvas-mode-edit-transition"
             });
           }
@@ -9941,7 +9941,7 @@ function MainSidebarNavigationContent({ isBlockBasedTheme = true }) {
       /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
         SidebarNavigationItemGlobalStyles,
         {
-          to: "/styles",
+          to: "/u-kasi/styles",
           uid: "global-styles-navigation-item",
           icon: styles_default,
           children: (0,external_wp_i18n_namespaceObject.__)("Styles")
@@ -9951,7 +9951,7 @@ function MainSidebarNavigationContent({ isBlockBasedTheme = true }) {
         SidebarNavigationItem,
         {
           uid: "navigation-navigation-item",
-          to: "/navigation",
+          to: "/u-kasi/navigation",
           withChevron: true,
           icon: navigation_default,
           children: (0,external_wp_i18n_namespaceObject.__)("Navigation")
@@ -9961,7 +9961,7 @@ function MainSidebarNavigationContent({ isBlockBasedTheme = true }) {
         SidebarNavigationItem,
         {
           uid: "page-navigation-item",
-          to: "/page",
+          to: "/u-kasi/page",
           withChevron: true,
           icon: page_default,
           children: (0,external_wp_i18n_namespaceObject.__)("Pages")
@@ -9971,7 +9971,7 @@ function MainSidebarNavigationContent({ isBlockBasedTheme = true }) {
         SidebarNavigationItem,
         {
           uid: "template-navigation-item",
-          to: "/template",
+          to: "/u-kasi/template",
           withChevron: true,
           icon: layout_default,
           children: (0,external_wp_i18n_namespaceObject.__)("Templates")
@@ -9982,7 +9982,7 @@ function MainSidebarNavigationContent({ isBlockBasedTheme = true }) {
       SidebarNavigationItem,
       {
         uid: "stylebook-navigation-item",
-        to: "/stylebook",
+        to: "/u-kasi/stylebook",
         withChevron: true,
         icon: styles_default,
         children: (0,external_wp_i18n_namespaceObject.__)("Styles")
@@ -9992,7 +9992,7 @@ function MainSidebarNavigationContent({ isBlockBasedTheme = true }) {
       SidebarNavigationItem,
       {
         uid: "patterns-navigation-item",
-        to: "/pattern",
+        to: "/u-kasi/pattern",
         withChevron: true,
         icon: symbol_default,
         children: (0,external_wp_i18n_namespaceObject.__)("Patterns")
@@ -10665,22 +10665,22 @@ function RootMenu() {
       NavigationButtonAsItem,
       {
         icon: typography_default,
-        path: "/typography",
+        path: "/u-kasi/typography",
         children: (0,external_wp_i18n_namespaceObject.__)("Typography")
       }
     ),
-    hasColorPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { icon: color_default, path: "/colors", children: (0,external_wp_i18n_namespaceObject.__)("Colors") }),
+    hasColorPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { icon: color_default, path: "/u-kasi/colors", children: (0,external_wp_i18n_namespaceObject.__)("Colors") }),
     hasBackgroundPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       NavigationButtonAsItem,
       {
         icon: background_default,
-        path: "/background",
+        path: "/u-kasi/background",
         "aria-label": (0,external_wp_i18n_namespaceObject.__)("Background styles"),
         children: (0,external_wp_i18n_namespaceObject.__)("Background")
       }
     ),
-    hasShadowPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { icon: shadow_default, path: "/shadows", children: (0,external_wp_i18n_namespaceObject.__)("Shadows") }),
-    hasLayoutPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { icon: layout_default, path: "/layout", children: (0,external_wp_i18n_namespaceObject.__)("Layout") })
+    hasShadowPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { icon: shadow_default, path: "/u-kasi/shadows", children: (0,external_wp_i18n_namespaceObject.__)("Shadows") }),
+    hasLayoutPanel && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { icon: layout_default, path: "/u-kasi/layout", children: (0,external_wp_i18n_namespaceObject.__)("Layout") })
   ] }) });
 }
 var root_menu_default = RootMenu;
@@ -11220,7 +11220,7 @@ function ScreenRoot() {
       children: [
         /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.CardBody, { children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalVStack, { spacing: 4, children: [
           /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.Card, { className: "edit-site-global-styles-screen-root__active-style-tile", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.CardMedia, { className: "edit-site-global-styles-screen-root__active-style-tile-preview", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(preview_styles_default, {}) }) }),
-          hasVariations && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: "/variations", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "space-between", children: [
+          hasVariations && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: "/u-kasi/variations", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "space-between", children: [
             /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.FlexItem, { children: (0,external_wp_i18n_namespaceObject.__)("Browse styles") }),
             /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
               IconWithCurrentColor,
@@ -11245,7 +11245,7 @@ function ScreenRoot() {
               )
             }
           ),
-          /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: "/blocks", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "space-between", children: [
+          /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: "/u-kasi/blocks", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "space-between", children: [
             /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.FlexItem, { children: (0,external_wp_i18n_namespaceObject.__)("Blocks") }),
             /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
               IconWithCurrentColor,
@@ -11299,7 +11299,7 @@ function VariationsPanel({ name }) {
     return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       NavigationButtonAsItem,
       {
-        path: "/blocks/" + encodeURIComponent(name) + "/variations/" + encodeURIComponent(style.name),
+        path: "/u-kasi/blocks/" + encodeURIComponent(name) + "/u-kasi/variations/" + encodeURIComponent(style.name),
         children: style.label
       },
       index
@@ -11400,7 +11400,7 @@ function BlockMenuItem({ block }) {
   return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
     NavigationButtonAsItem,
     {
-      path: "/blocks/" + encodeURIComponent(block.name),
+      path: "/u-kasi/blocks/" + encodeURIComponent(block.name),
       children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "flex-start", children: [
         /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_blockEditor_namespaceObject.BlockIcon, { icon: block.icon }),
         /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.FlexItem, { children: block.title })
@@ -11863,7 +11863,7 @@ function ElementItem({ parentMenu, element, label }) {
   const [fallbackBackgroundColor] = typography_elements_useGlobalStyle("color.background");
   const [gradientValue] = typography_elements_useGlobalStyle(prefix + "color.gradient");
   const [color] = typography_elements_useGlobalStyle(prefix + "color.text");
-  return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: parentMenu + "/typography/" + element, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "flex-start", children: [
+  return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: parentMenu + "/u-kasi/typography/" + element, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "flex-start", children: [
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       external_wp_components_namespaceObject.FlexItem,
       {
@@ -12207,7 +12207,7 @@ function TypographyVariations({ title, gap = 2 }) {
 function FontSizes() {
   return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalVStack, { spacing: 2, children: [
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "space-between", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(subtitle_default, { level: 3, children: (0,external_wp_i18n_namespaceObject.__)("Font Sizes") }) }),
-    /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { isBordered: true, isSeparated: true, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: "/typography/font-sizes", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { direction: "row", children: [
+    /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { isBordered: true, isSeparated: true, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: "/u-kasi/typography/font-sizes", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { direction: "row", children: [
       /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.FlexItem, { children: (0,external_wp_i18n_namespaceObject.__)("Font size presets") }),
       /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(icon_default, { icon: (0,external_wp_i18n_namespaceObject.isRTL)() ? chevron_left_default : chevron_right_default })
     ] }) }) })
@@ -12227,8 +12227,8 @@ var settings_default = /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObje
 
 ;// ./node_modules/@wordpress/edit-site/build-module/components/global-styles/font-library-modal/resolvers.js
 
-const FONT_FAMILIES_URL = "/wp/v2/font-families";
-const FONT_COLLECTIONS_URL = "/wp/v2/font-collections";
+const FONT_FAMILIES_URL = "/u-kasi/wp/v2/font-families";
+const FONT_COLLECTIONS_URL = "/u-kasi/wp/v2/font-collections";
 async function fetchInstallFontFamily(data) {
   const config = {
     path: FONT_FAMILIES_URL,
@@ -12526,7 +12526,7 @@ async function downloadFontFaceAssets(src) {
         }
         return response.blob();
       }).then((blob) => {
-        const filename = url.split("/").pop();
+        const filename = url.split("/u-kasi/").pop();
         const file = new File([blob], filename, {
           type: blob.type
         });
@@ -13298,9 +13298,9 @@ function InstalledFonts() {
       /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(
         external_wp_components_namespaceObject.Navigator,
         {
-          initialPath: libraryFontSelected ? "/fontFamily" : "/",
+          initialPath: libraryFontSelected ? "/u-kasi/fontFamily" : "/u-kasi/",
           children: [
-            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalVStack, { spacing: "8", children: [
+            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/u-kasi/", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalVStack, { spacing: "8", children: [
               notice && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
                 external_wp_components_namespaceObject.Notice,
                 {
@@ -13329,7 +13329,7 @@ function InstalledFonts() {
                           font_card_default,
                           {
                             font,
-                            navigatorPath: "/fontFamily",
+                            navigatorPath: "/u-kasi/fontFamily",
                             variantsText: getFontCardVariantsText(
                               font
                             ),
@@ -13366,7 +13366,7 @@ function InstalledFonts() {
                           font_card_default,
                           {
                             font,
-                            navigatorPath: "/fontFamily",
+                            navigatorPath: "/u-kasi/fontFamily",
                             variantsText: getFontCardVariantsText(
                               font
                             ),
@@ -13385,7 +13385,7 @@ function InstalledFonts() {
                 )
               ] })
             ] }) }),
-            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/fontFamily", children: [
+            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/u-kasi/fontFamily", children: [
               /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
                 ConfirmDeleteDialog,
                 {
@@ -13903,10 +13903,10 @@ function FontCollection({ slug }) {
       /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(
         external_wp_components_namespaceObject.Navigator,
         {
-          initialPath: "/",
+          initialPath: "/u-kasi/",
           className: "font-library-modal__tabpanel-layout",
           children: [
-            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/", children: [
+            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/u-kasi/", children: [
               /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { justify: "space-between", children: [
                 /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalVStack, { children: [
                   /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalHeading, { level: 2, size: 13, children: selectedCollection.name }),
@@ -13964,7 +13964,7 @@ function FontCollection({ slug }) {
                         font_card_default,
                         {
                           font: font.font_family_settings,
-                          navigatorPath: "/fontFamily",
+                          navigatorPath: "/u-kasi/fontFamily",
                           onClick: () => {
                             setSelectedFont(
                               font.font_family_settings
@@ -13978,7 +13978,7 @@ function FontCollection({ slug }) {
                 }
               ) })
             ] }),
-            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/fontFamily", children: [
+            /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Navigator.Screen, { path: "/u-kasi/fontFamily", children: [
               /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.Flex, { justify: "flex-start", children: [
                 /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
                   external_wp_components_namespaceObject.Navigator.BackButton,
@@ -19409,7 +19409,7 @@ function Palette({ name }) {
     ],
     [customColors, themeColors, defaultColors, defaultPaletteEnabled]
   );
-  const screenPath = !name ? "/colors/palette" : "/blocks/" + encodeURIComponent(name) + "/colors/palette";
+  const screenPath = !name ? "/u-kasi/colors/palette" : "/u-kasi/blocks/" + encodeURIComponent(name) + "/u-kasi/colors/palette";
   return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalVStack, { spacing: 3, children: [
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(subtitle_default, { level: 3, children: (0,external_wp_i18n_namespaceObject.__)("Palette") }),
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.__experimentalItemGroup, { isBordered: true, isSeparated: true, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationButtonAsItem, { path: screenPath, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, { direction: "row", children: [
@@ -21693,7 +21693,7 @@ const GlobalStylesPageActions = ({
               onClose();
               history.navigate(
                 (0,external_wp_url_namespaceObject.addQueryArgs)(path, {
-                  section: "/css"
+                  section: "/u-kasi/css"
                 })
               );
             },
@@ -21709,7 +21709,7 @@ const useSection = () => {
   const history = sidebar_global_styles_wrapper_useHistory();
   return (0,external_wp_element_.useMemo)(() => {
     return [
-      query.section ?? "/",
+      query.section ?? "/u-kasi/",
       (updatedSection) => {
         history.navigate(
           (0,external_wp_url_namespaceObject.addQueryArgs)(path, {
@@ -21792,7 +21792,7 @@ const scrollToSection = (anchorId, iframe) => {
 };
 const getStyleBookNavigationFromPath = (path) => {
   if (path && typeof path === "string") {
-    if (path === "/" || path.startsWith("/typography") || path.startsWith("/colors") || path.startsWith("/blocks")) {
+    if (path === "/u-kasi/" || path.startsWith("/u-kasi/typography") || path.startsWith("/u-kasi/colors") || path.startsWith("/u-kasi/blocks")) {
       return {
         top: true
       };
@@ -22041,11 +22041,11 @@ const StyleBookPreview = ({ userConfig = {}, isStatic = false }) => {
     if (STYLE_BOOK_COLOR_GROUPS.find(
       (group) => group.slug === blockName
     )) {
-      onChangeSection("/colors/palette");
+      onChangeSection("/u-kasi/colors/palette");
       return;
     }
     if (blockName === "typography") {
-      onChangeSection("/typography");
+      onChangeSection("/u-kasi/typography");
       return;
     }
     if (isBlockVariation) {
@@ -22058,15 +22058,15 @@ const StyleBookPreview = ({ userConfig = {}, isStatic = false }) => {
   const examplesForSinglePageUse = getExamplesForSinglePageUse(examples);
   let previewCategory = null;
   let blockVariation = null;
-  if (section.includes("/colors")) {
+  if (section.includes("/u-kasi/colors")) {
     previewCategory = "colors";
-  } else if (section.includes("/typography")) {
+  } else if (section.includes("/u-kasi/typography")) {
     previewCategory = "text";
-  } else if (section.includes("/blocks")) {
+  } else if (section.includes("/u-kasi/blocks")) {
     previewCategory = "blocks";
-    let blockName = decodeURIComponent(section).split("/blocks/")[1];
-    if (blockName?.includes("/variations")) {
-      [blockName, blockVariation] = blockName.split("/variations/");
+    let blockName = decodeURIComponent(section).split("/u-kasi/blocks/")[1];
+    if (blockName?.includes("/u-kasi/variations")) {
+      [blockName, blockVariation] = blockName.split("/u-kasi/variations/");
     }
     if (blockName && examples.find((example) => example.name === blockName)) {
       previewCategory = blockName;
@@ -23030,7 +23030,7 @@ function BlockStylesNavigationScreens({
   return blockStyles.map((style, index) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
     GlobalStylesNavigationScreen,
     {
-      path: parentMenu + "/variations/" + style.name,
+      path: parentMenu + "/u-kasi/variations/" + style.name,
       children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_block_default, { name: blockName, variation: style.name })
     },
     index
@@ -23048,7 +23048,7 @@ function ContextScreens({ name, parentMenu = "" }) {
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       GlobalStylesNavigationScreen,
       {
-        path: parentMenu + "/colors/palette",
+        path: parentMenu + "/u-kasi/colors/palette",
         children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_color_palette_default, { name })
       }
     ),
@@ -23080,14 +23080,14 @@ function GlobalStylesStyleBook() {
         if (STYLE_BOOK_COLOR_GROUPS.find(
           (group) => group.slug === blockName
         )) {
-          navigator.goTo("/colors/palette");
+          navigator.goTo("/u-kasi/colors/palette");
           return;
         }
         if (blockName === "typography") {
-          navigator.goTo("/typography");
+          navigator.goTo("/u-kasi/typography");
           return;
         }
-        navigator.goTo("/blocks/" + encodeURIComponent(blockName));
+        navigator.goTo("/u-kasi/blocks/" + encodeURIComponent(blockName));
       }
     }
   );
@@ -23111,10 +23111,10 @@ function GlobalStylesBlockLink() {
       return;
     }
     const currentPath = navigator.location.path;
-    if (currentPath !== "/blocks" && !currentPath.startsWith("/blocks/")) {
+    if (currentPath !== "/u-kasi/blocks" && !currentPath.startsWith("/u-kasi/blocks/")) {
       return;
     }
-    const newPath = "/blocks/" + encodeURIComponent(selectedBlockName);
+    const newPath = "/u-kasi/blocks/" + encodeURIComponent(selectedBlockName);
     if (newPath !== currentPath) {
       navigator.goTo(newPath, { skipFocus: true });
     }
@@ -23127,17 +23127,17 @@ function GlobalStylesEditorCanvasContainerLink() {
     []
   );
   const path = location?.path;
-  const isRevisionsOpen = path === "/revisions";
+  const isRevisionsOpen = path === "/u-kasi/revisions";
   (0,external_wp_element_.useEffect)(() => {
     switch (editorCanvasContainerView) {
       case "global-styles-revisions":
       case "global-styles-revisions:style-book":
         if (!isRevisionsOpen) {
-          goTo("/revisions");
+          goTo("/u-kasi/revisions");
         }
         break;
       case "global-styles-css":
-        goTo("/css");
+        goTo("/u-kasi/css");
         break;
       // The stand-alone style book is open
       // and the revisions panel is open,
@@ -23149,7 +23149,7 @@ function GlobalStylesEditorCanvasContainerLink() {
       case "style-book":
       default:
         if (isRevisionsOpen) {
-          goTo("/", { isBack: true });
+          goTo("/u-kasi/", { isBack: true });
         }
         break;
     }
@@ -23191,31 +23191,31 @@ function GlobalStylesUI({ path, onPathChange }) {
     external_wp_components_namespaceObject.Navigator,
     {
       className: "edit-site-global-styles-sidebar__navigator-provider",
-      initialPath: "/",
+      initialPath: "/u-kasi/",
       children: [
         path && onPathChange && /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationSync, { path, onPathChange }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_root_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/variations", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_style_variations_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/blocks", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_block_list_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/font-sizes", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(font_sizes_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/font-sizes/:origin/:slug", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(font_size_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/text", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "text" }) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/link", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "link" }) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/heading", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "heading" }) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/caption", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "caption" }) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/typography/button", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "button" }) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/colors", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_colors_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/shadows", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ScreenShadows, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/shadows/edit/:category/:slug", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ScreenShadowsEdit, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/layout", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_layout_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/css", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_css_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/revisions", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_revisions_default, {}) }),
-        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/background", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_background_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_root_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/variations", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_style_variations_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/blocks", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_block_list_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/font-sizes", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(font_sizes_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/font-sizes/:origin/:slug", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(font_size_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/text", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "text" }) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/link", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "link" }) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/heading", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "heading" }) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/caption", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "caption" }) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/typography/button", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_typography_element_default, { element: "button" }) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/colors", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_colors_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/shadows", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ScreenShadows, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/shadows/edit/:category/:slug", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ScreenShadowsEdit, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/layout", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_layout_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/css", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_css_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/revisions", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_revisions_default, {}) }),
+        /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesNavigationScreen, { path: "/u-kasi/background", children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_background_default, {}) }),
         blocks.map((block) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
           GlobalStylesNavigationScreen,
           {
-            path: "/blocks/" + encodeURIComponent(block.name),
+            path: "/u-kasi/blocks/" + encodeURIComponent(block.name),
             children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(screen_block_default, { name: block.name })
           },
           "menu-block-" + block.name
@@ -23225,7 +23225,7 @@ function GlobalStylesUI({ path, onPathChange }) {
           ContextScreens,
           {
             name: block.name,
-            parentMenu: "/blocks/" + encodeURIComponent(block.name)
+            parentMenu: "/u-kasi/blocks/" + encodeURIComponent(block.name)
           },
           "screens-block-" + block.name
         )),
@@ -23492,7 +23492,7 @@ function SiteExport() {
   async function handleExport() {
     try {
       const response = await external_wp_apiFetch_default()({
-        path: "/wp-block-editor/v1/export",
+        path: "/u-kasi/wp-block-editor/v1/export",
         parse: false,
         headers: {
           Accept: "application/zip"
@@ -23963,17 +23963,17 @@ const siteIconVariants = {
 function getListPathForPostType(postType) {
   switch (postType) {
     case "navigation":
-      return "/navigation";
+      return "/u-kasi/navigation";
     case "wp_block":
-      return "/pattern?postType=wp_block";
+      return "/u-kasi/pattern?postType=wp_block";
     case "wp_template_part":
-      return "/pattern?postType=wp_template_part";
+      return "/u-kasi/pattern?postType=wp_template_part";
     case "wp_template":
-      return "/template";
+      return "/u-kasi/template";
     case "page":
-      return "/page";
+      return "/u-kasi/page";
     case "post":
-      return "/";
+      return "/u-kasi/";
   }
   throw "Unknown post type";
 }
@@ -24156,7 +24156,7 @@ function EditSiteEditor({
                     onClick: () => {
                       resetZoomLevel();
                       if (isPostsList && location.query?.focusMode) {
-                        history.navigate("/", {
+                        history.navigate("/u-kasi/", {
                           transition: "canvas-mode-view-transition"
                         });
                       } else {
@@ -24222,7 +24222,7 @@ function isClassicThemeWithStyleBookSupport(siteData) {
 
 const homeRoute = {
   name: "home",
-  path: "/",
+  path: "/u-kasi/",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -24259,10 +24259,10 @@ function MobileGlobalStylesUI() {
 }
 const stylesRoute = {
   name: "styles",
-  path: "/styles",
+  path: "/u-kasi/styles",
   areas: {
     content: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GlobalStylesUIWrapper, {}),
-    sidebar: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenGlobalStyles, { backPath: "/" }),
+    sidebar: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenGlobalStyles, { backPath: "/u-kasi/" }),
     preview({ query }) {
       const isStylebook = query.preview === "stylebook";
       return isStylebook ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(StyleBookPreview, {}) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {});
@@ -24917,7 +24917,7 @@ function useDeleteNavigationMenu() {
           type: "snackbar"
         }
       );
-      history.navigate("/navigation");
+      history.navigate("/u-kasi/navigation");
     } catch (error) {
       createErrorNotice(
         (0,external_wp_i18n_namespaceObject.sprintf)(
@@ -25166,15 +25166,15 @@ const { useLocation: navigation_useLocation } = unlock(external_wp_router_namesp
 function MobileNavigationView() {
   const { query = {} } = navigation_useLocation();
   const { canvas = "view" } = query;
-  return canvas === "edit" ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {}) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenus, { backPath: "/" });
+  return canvas === "edit" ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {}) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenus, { backPath: "/u-kasi/" });
 }
 const navigationRoute = {
   name: "navigation",
-  path: "/navigation",
+  path: "/u-kasi/navigation",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenus, { backPath: "/" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
+      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenus, { backPath: "/u-kasi/" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
     },
     preview({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -25199,15 +25199,15 @@ const { useLocation: navigation_item_useLocation } = unlock(external_wp_router_n
 function MobileNavigationItemView() {
   const { query = {} } = navigation_item_useLocation();
   const { canvas = "view" } = query;
-  return canvas === "edit" ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {}) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenu, { backPath: "/navigation" });
+  return canvas === "edit" ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {}) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenu, { backPath: "/u-kasi/navigation" });
 }
 const navigationItemRoute = {
   name: "navigation-item",
-  path: "/wp_navigation/:postId",
+  path: "/u-kasi/wp_navigation/:postId",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenu, { backPath: "/navigation" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
+      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenNavigationMenu, { backPath: "/u-kasi/navigation" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
     },
     preview({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -43840,18 +43840,18 @@ function DataviewsPatterns() {
 
 const patternsRoute = {
   name: "patterns",
-  path: "/pattern",
+  path: "/u-kasi/pattern",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      const backPath = isBlockTheme || isClassicThemeWithStyleBookSupport(siteData) ? "/" : void 0;
+      const backPath = isBlockTheme || isClassicThemeWithStyleBookSupport(siteData) ? "/u-kasi/" : void 0;
       return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenPatterns, { backPath });
     },
     content: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DataviewsPatterns, {}),
     mobile({ siteData, query }) {
       const { categoryId } = query;
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      const backPath = isBlockTheme || isClassicThemeWithStyleBookSupport(siteData) ? "/" : void 0;
+      const backPath = isBlockTheme || isClassicThemeWithStyleBookSupport(siteData) ? "/u-kasi/" : void 0;
       return !!categoryId ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DataviewsPatterns, {}) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenPatterns, { backPath });
     }
   }
@@ -43865,11 +43865,11 @@ const patternsRoute = {
 
 const patternItemRoute = {
   name: "pattern-item",
-  path: "/wp_block/:postId",
+  path: "/u-kasi/wp_block/:postId",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      const backPath = isBlockTheme || isClassicThemeWithStyleBookSupport(siteData) ? "/" : void 0;
+      const backPath = isBlockTheme || isClassicThemeWithStyleBookSupport(siteData) ? "/u-kasi/" : void 0;
       return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenPatterns, { backPath });
     },
     mobile: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {}),
@@ -43884,9 +43884,9 @@ const patternItemRoute = {
 
 const templatePartItemRoute = {
   name: "template-part-item",
-  path: "/wp_template_part/*postId",
+  path: "/u-kasi/wp_template_part/*postId",
   areas: {
-    sidebar: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenPatterns, { backPath: "/" }),
+    sidebar: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenPatterns, { backPath: "/u-kasi/" }),
     mobile: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {}),
     preview: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(EditSiteEditor, {})
   }
@@ -43913,7 +43913,7 @@ function TemplateDataviewItem({ template, isActive }) {
   return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
     SidebarNavigationItem,
     {
-      to: (0,external_wp_url_namespaceObject.addQueryArgs)("/template", { activeView: text }),
+      to: (0,external_wp_url_namespaceObject.addQueryArgs)("/u-kasi/template", { activeView: text }),
       icon,
       "aria-current": isActive,
       children: text
@@ -43941,7 +43941,7 @@ function DataviewsTemplatesSidebarContent() {
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       SidebarNavigationItem,
       {
-        to: "/template",
+        to: "/u-kasi/template",
         icon: layout_default,
         "aria-current": activeView === "all",
         children: (0,external_wp_i18n_namespaceObject.__)("All templates")
@@ -45675,7 +45675,7 @@ function NewTemplateModal({ onClose }) {
     date: (0,external_wp_i18n_namespaceObject.sprintf)(
       // translators: %s: The homepage url.
       (0,external_wp_i18n_namespaceObject.__)("E.g. %s"),
-      homeUrl + "/" + (/* @__PURE__ */ new Date()).getFullYear()
+      homeUrl + "/u-kasi/" + (/* @__PURE__ */ new Date()).getFullYear()
     )
   };
   (0,external_wp_element_.useEffect)(() => {
@@ -46191,11 +46191,11 @@ async function isTemplateListView(query) {
 }
 const templatesRoute = {
   name: "templates",
-  path: "/template",
+  path: "/u-kasi/template",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenTemplatesBrowse, { backPath: "/" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
+      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenTemplatesBrowse, { backPath: "/u-kasi/" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
     },
     content({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -46230,11 +46230,11 @@ const templatesRoute = {
 
 const templateItemRoute = {
   name: "template-item",
-  path: "/wp_template/*postId",
+  path: "/u-kasi/wp_template/*postId",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
-      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenTemplatesBrowse, { backPath: "/" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
+      return isBlockTheme ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenTemplatesBrowse, { backPath: "/u-kasi/" }) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
     },
     mobile({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -48635,7 +48635,7 @@ function MobilePagesView() {
 }
 const pagesRoute = {
   name: "pages",
-  path: "/page",
+  path: "/u-kasi/page",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -48643,7 +48643,7 @@ const pagesRoute = {
         SidebarNavigationScreen,
         {
           title: (0,external_wp_i18n_namespaceObject.__)("Pages"),
-          backPath: "/",
+          backPath: "/u-kasi/",
           content: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DataViewsSidebarContent, { postType: "page" })
         }
       ) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
@@ -48693,7 +48693,7 @@ const pagesRoute = {
 
 const pageItemRoute = {
   name: "page-item",
-  path: "/page/:postId",
+  path: "/u-kasi/page/:postId",
   areas: {
     sidebar({ siteData }) {
       const isBlockTheme = siteData.currentTheme?.is_block_theme;
@@ -48701,7 +48701,7 @@ const pageItemRoute = {
         SidebarNavigationScreen,
         {
           title: (0,external_wp_i18n_namespaceObject.__)("Pages"),
-          backPath: "/",
+          backPath: "/u-kasi/",
           content: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DataViewsSidebarContent, { postType: "page" })
         }
       ) : /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SidebarNavigationScreenUnsupported, {});
@@ -48727,14 +48727,14 @@ const pageItemRoute = {
 
 const stylebookRoute = {
   name: "stylebook",
-  path: "/stylebook",
+  path: "/u-kasi/stylebook",
   areas: {
     sidebar({ siteData }) {
       return isClassicThemeWithStyleBookSupport(siteData) ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
         SidebarNavigationScreen,
         {
           title: (0,external_wp_i18n_namespaceObject.__)("Styles"),
-          backPath: "/",
+          backPath: "/u-kasi/",
           description: (0,external_wp_i18n_namespaceObject.__)(
             `Preview your website's visual identity: colors, typography, and blocks.`
           )
@@ -48951,7 +48951,7 @@ function MobilePostsView() {
 }
 const postsRoute = {
   name: "posts",
-  path: "/",
+  path: "/u-kasi/",
   areas: {
     sidebar: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       SidebarNavigationScreen,
@@ -48995,7 +48995,7 @@ const postsRoute = {
 
 const postItemRoute = {
   name: "post-item",
-  path: "/post/:postId",
+  path: "/u-kasi/post/:postId",
   areas: {
     sidebar: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
       SidebarNavigationScreen,
