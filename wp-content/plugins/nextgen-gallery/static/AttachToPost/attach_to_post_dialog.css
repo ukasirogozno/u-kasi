@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Lato';
-    src: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_admin/static/Lato-Regular.ttf') format('truetype')
+    src: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_admin/static/Lato-Regular.ttf') format('truetype')
 }
 
 /* Thickbox-based IGW Rules */
@@ -128,7 +128,7 @@
 }
 
 .ngg_attach_to_post_window .mceClose {
-	background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/AttachToPost/uploader-icons.png') !important;
+	background: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/AttachToPost/uploader-icons.png') !important;
 	display: block !important;
 	margin: 0 !important;
 	padding: 0 !important;

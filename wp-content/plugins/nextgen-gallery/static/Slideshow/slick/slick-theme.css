@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/ajax-loader.gif') center center no-repeat;
+    background: #fff url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.eot');
-    src: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.eot#iefix') format('embedded-opentype'), url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.woff') format('woff'), url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.ttf') format('truetype'), url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.svg#slick') format('svg');
+    src: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.eot');
+    src: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.eot#iefix') format('embedded-opentype'), url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.woff') format('woff'), url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.ttf') format('truetype'), url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/nextgen-gallery/static/Slideshow/slick/fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
