@@ -45,7 +45,7 @@ input[type=submit] {
   padding: .4em 1em !important;
   border: 1px solid #d3d3d3;
   border-radius: 4px;
-  background: #e6e6e6 url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+  background: #e6e6e6 url(https://ukasirogozno.github.io/u-kasi/wp-content/plugins/ad-inserter/css/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
   color: #666;
   cursor: pointer;
 }
@@ -81,7 +81,7 @@ h2.ai-global-field-name {
   height: 24px;
   top: 24px;
   left: 139px;
-  background: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/close-button.png') no-repeat center center;
+  background: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/ad-inserter/css/images/close-button.png') no-repeat center center;
   cursor: pointer;
   z-index: 9;
   display: none;
@@ -110,7 +110,7 @@ div.ai-tooltip {
   font-size: 11px;
   color: #FFF!important;
   border: 1px solid #c6c6c6;
-  background: #ddd url(https://u-kasi-i-andrzeja.pl/wp-content/plugins/ad-inserter/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x;
+  background: #ddd url(https://ukasirogozno.github.io/u-kasi/wp-content/plugins/ad-inserter/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x;
   border-radius: 5px;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */

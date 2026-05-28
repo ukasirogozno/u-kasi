@@ -3,11 +3,11 @@
 */
 @font-face {
 	font-family: 'bwsicons';
-	src: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.eot?edecf2');
-	src: url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.eot?edecf2#iefix') format('embedded-opentype'),
-		url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.ttf?edecf2') format('truetype'),
-		url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.woff?edecf2') format('woff'),
-		url('https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.svg?edecf2#bwsicons') format('svg');
+	src: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.eot?edecf2');
+	src: url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.eot?edecf2#iefix') format('embedded-opentype'),
+		url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.ttf?edecf2') format('truetype'),
+		url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.woff?edecf2') format('woff'),
+		url('https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/fonts/bwsicons.svg?edecf2#bwsicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -457,7 +457,7 @@ div.bws_banner_on_plugin_page .icon {
 * affiliate postbox
 */
 #bws-affiliate-postbox {
-	background: url("https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/images/affiliate-background.png") no-repeat center #1a3e59;
+	background: url("https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/images/affiliate-background.png") no-repeat center #1a3e59;
 	overflow: hidden;
 	position: relative;
 	padding: 12px;
@@ -514,7 +514,7 @@ span.bws_code {
 * styles help tooltips
 */
 .bws_help_box {
-	background-image: url("https://u-kasi-i-andrzeja.pl/wp-content/plugins/google-captcha/bws_menu/images/tooltip_icons.png");
+	background-image: url("https://ukasirogozno.github.io/u-kasi/wp-content/plugins/google-captcha/bws_menu/images/tooltip_icons.png");
 	background-repeat: no-repeat;
 	cursor: pointer;
 	height: 28px;
